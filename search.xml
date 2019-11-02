@@ -5,8 +5,8 @@
     <url>/2019/11/02/MongoDB%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E2%80%A6%E2%80%A6code-100/</url>
     <content><![CDATA[<h3 id="连接MongoDB时，报错如下："><a href="#连接MongoDB时，报错如下：" class="headerlink" title="连接MongoDB时，报错如下："></a>连接MongoDB时，报错如下：</h3><h4 id="2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting"><a href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting" class="headerlink" title="2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting"></a>2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting</h4><h4 id="2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100"><a href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100" class="headerlink" title="2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100"></a>2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100</h4><h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><h4 id="mongodb非正常关闭"><a href="#mongodb非正常关闭" class="headerlink" title="mongodb非正常关闭"></a>mongodb非正常关闭</h4><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="删除db目录下的mongod-lock文件即可"><a href="#删除db目录下的mongod-lock文件即可" class="headerlink" title="删除db目录下的mongod.lock文件即可."></a>删除db目录下的mongod.lock文件即可.</h4>]]></content>
       <categories>
-        <category>MongoDB</category>
         <category>数据库</category>
+        <category>MongoDB</category>
       </categories>
       <tags>
         <tag>数据库</tag>
@@ -20,12 +20,12 @@
 <h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><h4 id="库名用-Esc下的键-符号包裹，效果如下"><a href="#库名用-Esc下的键-符号包裹，效果如下" class="headerlink" title="库名用`(Esc下的键)符号包裹，效果如下"></a>库名用`(Esc下的键)符号包裹，效果如下</h4><p><img src="/images/hexo/4.png" alt="Yoyou"></p>
 ]]></content>
       <categories>
-        <category>MySQL</category>
         <category>数据库</category>
+        <category>MySQL</category>
       </categories>
       <tags>
-        <tag>MySQL</tag>
         <tag>数据库</tag>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
