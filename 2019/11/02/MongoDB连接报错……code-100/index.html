@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="MongoDB,数据库," />
 
 
 
@@ -86,12 +86,15 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;about&#x2F;index.html">
+<meta name="description" content="连接MongoDB时，报错如下：2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100原因：mongodb非正常关闭解决方法：删除db目录下的mongod">
+<meta name="keywords" content="MongoDB,数据库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MongoDB连接报错shutting down with code:100">
+<meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;2019&#x2F;11&#x2F;02&#x2F;MongoDB%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E2%80%A6%E2%80%A6code-100&#x2F;index.html">
 <meta property="og:site_name" content="Yoyou的Blog">
+<meta property="og:description" content="连接MongoDB时，报错如下：2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100原因：mongodb非正常关闭解决方法：删除db目录下的mongod">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-02T04:00:00.452Z">
+<meta property="og:updated_time" content="2019-11-02T04:16:06.395Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -122,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="https://zhengyue12.github.io/about/"/>
+  <link rel="canonical" href="https://zhengyue12.github.io/2019/11/02/MongoDB连接报错……code-100/"/>
 
 
 
 
 
-  <title>about | Yoyou的Blog</title>
+  <title>MongoDB连接报错shutting down with code:100 | Yoyou的Blog</title>
   
 
 
@@ -277,33 +280,212 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2019/11/02/MongoDB%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E2%80%A6%E2%80%A6code-100/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zheng Yoyou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/yy.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yoyou的Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">MongoDB连接报错shutting down with code:100</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-02T12:12:38+08:00">
+                2019-11-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MongoDB/" itemprop="url" rel="index">
+                    <span itemprop="name">MongoDB</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MongoDB/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本页总阅读数<i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h3 id="连接MongoDB时，报错如下："><a href="#连接MongoDB时，报错如下：" class="headerlink" title="连接MongoDB时，报错如下："></a>连接MongoDB时，报错如下：</h3><h4 id="2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting"><a href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting" class="headerlink" title="2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting"></a>2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting</h4><h4 id="2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100"><a href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100" class="headerlink" title="2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100"></a>2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100</h4><h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><h4 id="mongodb非正常关闭"><a href="#mongodb非正常关闭" class="headerlink" title="mongodb非正常关闭"></a>mongodb非正常关闭</h4><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="删除db目录下的mongod-lock文件即可"><a href="#删除db目录下的mongod-lock文件即可" class="headerlink" title="删除db目录下的mongod.lock文件即可."></a>删除db目录下的mongod.lock文件即可.</h4>
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果你觉得有帮助，慷慨如你，可以扫描下面的二维码赞赏一下</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/yy.jpg" alt="Zheng Yoyou 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/yy.jpg" alt="Zheng Yoyou 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MongoDB/" rel="tag"># MongoDB</a>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag"># 数据库</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/02/MySQL%E5%90%8D%E5%AD%97%E5%8C%85%E5%90%AB%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E7%9A%84%E5%BA%93%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA%E6%88%96%E5%88%A0%E9%99%A4/" rel="next" title="MySQL名字包含特殊符号的库无法创建或删除">
+                <i class="fa fa-chevron-left"></i> MySQL名字包含特殊符号的库无法创建或删除
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -336,8 +518,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -431,6 +622,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#连接MongoDB时，报错如下："><span class="nav-number">1.</span> <span class="nav-text">连接MongoDB时，报错如下：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting"><span class="nav-number">1.1.</span> <span class="nav-text">2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100"><span class="nav-number">1.2.</span> <span class="nav-text">2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原因："><span class="nav-number">2.</span> <span class="nav-text">原因：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#mongodb非正常关闭"><span class="nav-number">2.1.</span> <span class="nav-text">mongodb非正常关闭</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方法："><span class="nav-number">3.</span> <span class="nav-text">解决方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#删除db目录下的mongod-lock文件即可"><span class="nav-number">3.1.</span> <span class="nav-text">删除db目录下的mongod.lock文件即可.</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

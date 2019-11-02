@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MongoDB连接报错shutting down with code:100</title>
+    <url>/2019/11/02/MongoDB%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E2%80%A6%E2%80%A6code-100/</url>
+    <content><![CDATA[<h3 id="连接MongoDB时，报错如下："><a href="#连接MongoDB时，报错如下：" class="headerlink" title="连接MongoDB时，报错如下："></a>连接MongoDB时，报错如下：</h3><h4 id="2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting"><a href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting" class="headerlink" title="2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting"></a>2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting</h4><h4 id="2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100"><a href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100" class="headerlink" title="2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100"></a>2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100</h4><h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><h4 id="mongodb非正常关闭"><a href="#mongodb非正常关闭" class="headerlink" title="mongodb非正常关闭"></a>mongodb非正常关闭</h4><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="删除db目录下的mongod-lock文件即可"><a href="#删除db目录下的mongod-lock文件即可" class="headerlink" title="删除db目录下的mongod.lock文件即可."></a>删除db目录下的mongod.lock文件即可.</h4>]]></content>
+      <categories>
+        <category>MongoDB</category>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>MongoDB</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL名字包含特殊符号的库无法创建或删除</title>
+    <url>/2019/11/02/MySQL%E5%90%8D%E5%AD%97%E5%8C%85%E5%90%AB%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E7%9A%84%E5%BA%93%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA%E6%88%96%E5%88%A0%E9%99%A4/</url>
+    <content><![CDATA[<p><img src="/images/hexo/3.png" alt="Yoyou"></p>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><h4 id="库名用-Esc下的键-符号包裹，效果如下"><a href="#库名用-Esc下的键-符号包裹，效果如下" class="headerlink" title="库名用`(Esc下的键)符号包裹，效果如下"></a>库名用`(Esc下的键)符号包裹，效果如下</h4><p><img src="/images/hexo/4.png" alt="Yoyou"></p>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用Hexo+Github搭建属于自己的个人博客</title>
     <url>/2019/11/01/%E4%BD%BF%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="使用Hexo-Github搭建属于自己的个人博客"><a href="#使用Hexo-Github搭建属于自己的个人博客" class="headerlink" title="使用Hexo+Github搭建属于自己的个人博客"></a>使用Hexo+Github搭建属于自己的个人博客</h1>]]></content>
+    <content><![CDATA[<h1 id="使用Hexo-Github搭建属于自己的个人博客"><a href="#使用Hexo-Github搭建属于自己的个人博客" class="headerlink" title="使用Hexo+Github搭建属于自己的个人博客"></a>使用Hexo+Github搭建属于自己的个人博客</h1><h2 id="（一）前期准备"><a href="#（一）前期准备" class="headerlink" title="（一）前期准备"></a>（一）前期准备</h2><h4 id="emsp-emsp-Node-js（node-v，-npm-v-检测安装）"><a href="#emsp-emsp-Node-js（node-v，-npm-v-检测安装）" class="headerlink" title="&emsp;&emsp;Node.js（node -v， npm -v 检测安装）"></a>&emsp;&emsp;Node.js（node -v， npm -v 检测安装）</h4><h4 id="emsp-emsp-Git"><a href="#emsp-emsp-Git" class="headerlink" title="&emsp;&emsp;Git"></a>&emsp;&emsp;Git</h4><h4 id="emsp-emsp-sublime（文本编辑器仅供参考，凭个人喜好选择）"><a href="#emsp-emsp-sublime（文本编辑器仅供参考，凭个人喜好选择）" class="headerlink" title="&emsp;&emsp;sublime（文本编辑器仅供参考，凭个人喜好选择）"></a>&emsp;&emsp;sublime（文本编辑器仅供参考，凭个人喜好选择）</h4><h4 id="emsp-emsp-注册GitHub，新建一个仓库，仓库名以（xxx-github-io）为标准"><a href="#emsp-emsp-注册GitHub，新建一个仓库，仓库名以（xxx-github-io）为标准" class="headerlink" title="&emsp;&emsp;注册GitHub，新建一个仓库，仓库名以（xxx.github.io）为标准"></a>&emsp;&emsp;注册GitHub，新建一个仓库，仓库名以（xxx.github.io）为标准</h4><h2 id="（二）安装Hexo"><a href="#（二）安装Hexo" class="headerlink" title="（二）安装Hexo"></a>（二）安装Hexo</h2><h4 id="emsp-emsp-在自己喜欢的目录下新建一个放置博客文件夹的目录"><a href="#emsp-emsp-在自己喜欢的目录下新建一个放置博客文件夹的目录" class="headerlink" title="&emsp;&emsp;在自己喜欢的目录下新建一个放置博客文件夹的目录"></a>&emsp;&emsp;在自己喜欢的目录下新建一个放置博客文件夹的目录</h4><h4 id="emsp-emsp-使用Git进入到此目录，执行以下命令"><a href="#emsp-emsp-使用Git进入到此目录，执行以下命令" class="headerlink" title="&emsp;&emsp;使用Git进入到此目录，执行以下命令"></a>&emsp;&emsp;使用Git进入到此目录，执行以下命令</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h2 id="（三）初始化博客"><a href="#（三）初始化博客" class="headerlink" title="（三）初始化博客"></a>（三）初始化博客</h2><h4 id="emsp-emsp-初始化"><a href="#emsp-emsp-初始化" class="headerlink" title="&emsp;&emsp;初始化"></a>&emsp;&emsp;初始化</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm init 博客名</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-进入到新创建的博客目录下，安装相关的依赖"><a href="#emsp-emsp-进入到新创建的博客目录下，安装相关的依赖" class="headerlink" title="&emsp;&emsp;进入到新创建的博客目录下，安装相关的依赖"></a>&emsp;&emsp;进入到新创建的博客目录下，安装相关的依赖</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-此时已经创建完毕，可以输入以下命令在网页上进行预览"><a href="#emsp-emsp-此时已经创建完毕，可以输入以下命令在网页上进行预览" class="headerlink" title="&emsp;&emsp;此时已经创建完毕，可以输入以下命令在网页上进行预览"></a>&emsp;&emsp;此时已经创建完毕，可以输入以下命令在网页上进行预览</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo s -p未被占用端口号 (ctral+c结束)</span><br></pre></td></tr></table></figure>
+
+<h2 id="（四）部署到GitHub"><a href="#（四）部署到GitHub" class="headerlink" title="（四）部署到GitHub"></a>（四）部署到GitHub</h2><h4 id="emsp-emsp-安装hexo-deployer-git-插件"><a href="#emsp-emsp-安装hexo-deployer-git-插件" class="headerlink" title="&emsp;&emsp;安装hexo-deployer-git 插件"></a>&emsp;&emsp;安装hexo-deployer-git 插件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-使用sublime打开博客文件夹，找到-config-yml文件，修改以下内容"><a href="#emsp-emsp-使用sublime打开博客文件夹，找到-config-yml文件，修改以下内容" class="headerlink" title="&emsp;&emsp;使用sublime打开博客文件夹，找到_config.yml文件，修改以下内容"></a>&emsp;&emsp;使用sublime打开博客文件夹，找到_config.yml文件，修改以下内容</h4><p><img src="/images/hexo/1.png" alt="Yoyou"><br><img src="/images/hexo/2.png" alt="Yoyou"></p>
+<h4 id="emsp-emsp-清理"><a href="#emsp-emsp-清理" class="headerlink" title="&emsp;&emsp;清理"></a>&emsp;&emsp;清理</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-生成"><a href="#emsp-emsp-生成" class="headerlink" title="&emsp;&emsp;生成"></a>&emsp;&emsp;生成</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-提交"><a href="#emsp-emsp-提交" class="headerlink" title="&emsp;&emsp;提交"></a>&emsp;&emsp;提交</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-配置完成，即可拥有自己的博客网址-xxx-github-io"><a href="#emsp-emsp-配置完成，即可拥有自己的博客网址-xxx-github-io" class="headerlink" title="&emsp;&emsp;配置完成，即可拥有自己的博客网址(xxx.github.io)"></a>&emsp;&emsp;配置完成，即可拥有自己的博客网址(xxx.github.io)</h4>]]></content>
       <categories>
         <category>Blog</category>
       </categories>
@@ -14,8 +53,18 @@
   <entry>
     <title>Hello World</title>
     <url>/2019/10/31/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo"></a>Hello Hexo</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<p>##Welcome to My Blog!!</p>
+<a id="more"></a>
+
+
+<!--
+## Hello Hexo
+
+## Quick Start
+
+### Create a new post
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -26,7 +75,7 @@
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a><br>–&gt;</p>
 ]]></content>
   </entry>
 </search>
