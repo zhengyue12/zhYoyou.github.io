@@ -1,9 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>'Linux学习笔记（一）</title>
+    <title>Liunx常用命令（三）</title>
+    <url>/2019/11/11/Liunx%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</url>
+    <content><![CDATA[<p><font color="gray" face="黑体" size=5>  more</font></p>
+<h4 align="center">-- 显示文件内容，带分页</h4>
+
+<a id="more"></a>
+<h5 id="–-more-文件名-分页，空格下一页，pgup上一页"><a href="#–-more-文件名-分页，空格下一页，pgup上一页" class="headerlink" title="– more 文件名 [分页，空格下一页，pgup上一页]"></a>– more 文件名 [分页，空格下一页，pgup上一页]</h5><hr>
+<p><font color="gray" face="黑体" size=5>  less</font></p>
+<h4 align="center">-- 显示文件内容带分页</h4>
+
+<hr>
+<p><font color="gray" face="黑体" size=5>  grep</font></p>
+<h4 align="center">-- 查询文件内容</h4>
+
+<h5 id="–-grep-“关键词”-文件名-查询"><a href="#–-grep-“关键词”-文件名-查询" class="headerlink" title="– grep “关键词” 文件名 [查询]"></a>– grep “关键词” 文件名 [查询]</h5><hr>
+<p><font color="gray" face="黑体" size=5> | </font></p>
+<h4 align="center">-- 管道命令，把上一个命令给|后的一个命令执行</h4>
+
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Liunx常用命令（二）</title>
+    <url>/2019/11/11/Liunx%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
+    <content><![CDATA[<p><font color="gray" face="黑体" size=5>  mkdir</font></p>
+<h4 align="center">-- 创建空目录</h4>
+
+<a id="more"></a>
+
+<hr>
+<p><font color="gray" face="黑体" size=5>  rmdir</font></p>
+<h4 align="center">-- 删除空目录</h4>
+
+<hr>
+<p><font color="gray" face="黑体" size=5>  touch</font></p>
+<h4 align="center">-- 建立空文件</h4>
+
+
+
+<hr>
+<p><font color="gray" face="黑体" size=5>  cp</font></p>
+<h4 align="center">-- 复制命令</h4>
+
+<h5 id="–-cp-file1-dir1-【复制文件到指定目录下】"><a href="#–-cp-file1-dir1-【复制文件到指定目录下】" class="headerlink" title="– cp file1 dir1 【复制文件到指定目录下】"></a>– cp file1 dir1 【复制文件到指定目录下】</h5><h5 id="–-cp-r-dir1-dir2-【递归复制目录（复制子目录信息）】"><a href="#–-cp-r-dir1-dir2-【递归复制目录（复制子目录信息）】" class="headerlink" title="– cp -r dir1 dir2 【递归复制目录（复制子目录信息）】"></a>– cp -r dir1 dir2 【递归复制目录（复制子目录信息）】</h5><hr>
+<p><font color="gray" face="黑体" size=5>  mv</font></p>
+<h4 align="center">-- 移动文件和改文件名</h4>
+
+<hr>
+<p><font color="gray" face="黑体" size=5>  rm</font></p>
+<h4 align="center">-- 删除文件和目录</h4>
+
+<h5 id="–-rm-rf-【删除所有内容（包括目录和文件），r递归，f强制】"><a href="#–-rm-rf-【删除所有内容（包括目录和文件），r递归，f强制】" class="headerlink" title="– rm -rf* 【删除所有内容（包括目录和文件），r递归，f强制】"></a>– rm -rf* 【删除所有内容（包括目录和文件），r递归，f强制】</h5><hr>
+<p><font color="gray" face="黑体" size=5>  ln</font></p>
+<h4 align="center">-- 建立符号连接</h4>
+
+<h5 id="–-s-源目标"><a href="#–-s-源目标" class="headerlink" title="– -s  源目标"></a>– -s  源目标</h5><h5 id="–-s-etc-inittab-inittab-【inittab指向实际文件-etc-inittab】"><a href="#–-s-etc-inittab-inittab-【inittab指向实际文件-etc-inittab】" class="headerlink" title="– -s /etc/inittab inittab 【inittab指向实际文件/etc/inittab】"></a>– -s /etc/inittab inittab 【inittab指向实际文件/etc/inittab】</h5>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux常用命令（一）</title>
     <url>/2019/11/11/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p><font color="gray" face="黑体" size=5>  init [0123456]</font></p>
+<h4 align="center">-- 指定运行级别</h4>
+
+<h5 id="emsp-emsp-–0：关机"><a href="#emsp-emsp-–0：关机" class="headerlink" title="&emsp;&emsp;–0：关机"></a>&emsp;&emsp;–0：关机</h5><h5 id="emsp-emsp-–1：单用户"><a href="#emsp-emsp-–1：单用户" class="headerlink" title="&emsp;&emsp;–1：单用户"></a>&emsp;&emsp;–1：单用户</h5><a id="more"></a>
+<h5 id="emsp-emsp-–2：多用户状态没有网络服务"><a href="#emsp-emsp-–2：多用户状态没有网络服务" class="headerlink" title="&emsp;&emsp;–2：多用户状态没有网络服务"></a>&emsp;&emsp;–2：多用户状态没有网络服务</h5><h5 id="emsp-emsp-–3-：多用户状态有网络服务"><a href="#emsp-emsp-–3-：多用户状态有网络服务" class="headerlink" title="&emsp;&emsp;–3*：多用户状态有网络服务"></a>&emsp;&emsp;–3*：多用户状态有网络服务</h5><h5 id="emsp-emsp-–4：系统未使用保留给用户"><a href="#emsp-emsp-–4：系统未使用保留给用户" class="headerlink" title="&emsp;&emsp;–4：系统未使用保留给用户"></a>&emsp;&emsp;–4：系统未使用保留给用户</h5><h5 id="emsp-emsp-–5-：图形界面"><a href="#emsp-emsp-–5-：图形界面" class="headerlink" title="&emsp;&emsp;–5*：图形界面"></a>&emsp;&emsp;–5*：图形界面</h5><h5 id="emsp-emsp-6：系统重启"><a href="#emsp-emsp-6：系统重启" class="headerlink" title="&emsp;&emsp;-6：系统重启"></a>&emsp;&emsp;-6：系统重启</h5><h5 id="emsp-emsp-修改默认运行级别：vi-etc-inittab，进入查看命令"><a href="#emsp-emsp-修改默认运行级别：vi-etc-inittab，进入查看命令" class="headerlink" title="&emsp;&emsp; 修改默认运行级别：vi /etc/inittab，进入查看命令"></a>&emsp;&emsp; 修改默认运行级别：vi /etc/inittab，进入查看命令</h5><hr>
+<p><font color="gray" face="黑体" size=5>  pwd</font></p>
+<h4 align="center">-- 显示当前工作目录</h4>
+
+<hr>
+<p><font color="gray" face="黑体" size=5>  cd</font></p>
+<h4 align="center">-- 改变目录</h4>
+
+<hr>
+<p><font color="gray" face="黑体" size=5>  ls</font></p>
+<h4 align="center">-- 列出文件和目录</h4>
+
+<h5 id="emsp-emsp-–-a：显示隐藏文件"><a href="#emsp-emsp-–-a：显示隐藏文件" class="headerlink" title="&emsp;&emsp;– -a：显示隐藏文件"></a>&emsp;&emsp;– -a：显示隐藏文件</h5><h5 id="emsp-emsp-–-l：显示长列表格式"><a href="#emsp-emsp-–-l：显示长列表格式" class="headerlink" title="&emsp;&emsp;– -l：显示长列表格式"></a>&emsp;&emsp;– -l：显示长列表格式</h5><h5 id="emsp-emsp-–-al：显示长列表格式隐藏文件"><a href="#emsp-emsp-–-al：显示长列表格式隐藏文件" class="headerlink" title="&emsp;&emsp;– -al：显示长列表格式隐藏文件"></a>&emsp;&emsp;– -al：显示长列表格式隐藏文件</h5>]]></content>
       <categories>
         <category>Linux</category>
       </categories>
