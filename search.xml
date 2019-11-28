@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Elipse中SpringMVC加上注解没有提示</title>
+    <url>/2019/11/28/Elipse%E4%B8%ADSpringMVC%E5%8A%A0%E4%B8%8A%E6%B3%A8%E8%A7%A3%E6%B2%A1%E6%9C%89%E6%8F%90%E7%A4%BA/</url>
+    <content><![CDATA[<a id="more"></a>
+<h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><h4 id="Elipse中加上SpringMVC相关注解时，没有代码提示"><a href="#Elipse中加上SpringMVC相关注解时，没有代码提示" class="headerlink" title="Elipse中加上SpringMVC相关注解时，没有代码提示"></a>Elipse中加上SpringMVC相关注解时，没有代码提示</h4><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="取消勾选红圈选项"><a href="#取消勾选红圈选项" class="headerlink" title="取消勾选红圈选项"></a>取消勾选红圈选项</h4><p><img src="/images/SpringMVC/4.png" alt="Yoyou"></p>
+]]></content>
+      <categories>
+        <category>SpringMVC</category>
+      </categories>
+      <tags>
+        <tag>SpringMVC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Liunx常用命令（三）</title>
     <url>/2019/11/11/Liunx%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/</url>
     <content><![CDATA[<p><font color="gray" face="黑体" size=5>  more</font></p>
@@ -97,15 +110,17 @@
       </tags>
   </entry>
   <entry>
-    <title>杂记（一）</title>
-    <url>/2019/11/10/%E6%9D%82%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <title>SpringMVC的PUT、DELETE响应问题</title>
+    <url>/2019/11/10/SpringMVC%E7%9A%84PUT%E3%80%81DELETE%E5%93%8D%E5%BA%94%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<a id="more"></a>
-<h4 id="2019-11-10"><a href="#2019-11-10" class="headerlink" title="2019-11-10"></a>2019-11-10</h4><h4 id="emsp-emsp-每天885式的学习，到了周末却也还是没有闲下来。周六一天的社团活动，在图书馆外坐了八个多小时，等待来人扫码答题，而我的工作就是用棒棒糖诱惑来人扫码答题。除了糖很甜，也就只剩下枯燥的呆坐了。不过八个半小时的志愿者时间还是非常棒的。晚上群里放了周五云计算的比赛结果，需要确认。随意的发了一句OK，一切都是那么平静且自然。直到同学艾特我告诉我班级错了。哎，一等奖的喜悦瞬间被尴尬所替代。"><a href="#emsp-emsp-每天885式的学习，到了周末却也还是没有闲下来。周六一天的社团活动，在图书馆外坐了八个多小时，等待来人扫码答题，而我的工作就是用棒棒糖诱惑来人扫码答题。除了糖很甜，也就只剩下枯燥的呆坐了。不过八个半小时的志愿者时间还是非常棒的。晚上群里放了周五云计算的比赛结果，需要确认。随意的发了一句OK，一切都是那么平静且自然。直到同学艾特我告诉我班级错了。哎，一等奖的喜悦瞬间被尴尬所替代。" class="headerlink" title="&emsp;&emsp;每天885式的学习，到了周末却也还是没有闲下来。周六一天的社团活动，在图书馆外坐了八个多小时，等待来人扫码答题，而我的工作就是用棒棒糖诱惑来人扫码答题。除了糖很甜，也就只剩下枯燥的呆坐了。不过八个半小时的志愿者时间还是非常棒的。晚上群里放了周五云计算的比赛结果，需要确认。随意的发了一句OK，一切都是那么平静且自然。直到同学艾特我告诉我班级错了。哎，一等奖的喜悦瞬间被尴尬所替代。"></a>&emsp;&emsp;每天885式的学习，到了周末却也还是没有闲下来。周六一天的社团活动，在图书馆外坐了八个多小时，等待来人扫码答题，而我的工作就是用棒棒糖诱惑来人扫码答题。除了糖很甜，也就只剩下枯燥的呆坐了。不过八个半小时的志愿者时间还是非常棒的。晚上群里放了周五云计算的比赛结果，需要确认。随意的发了一句OK，一切都是那么平静且自然。直到同学艾特我告诉我班级错了。哎，一等奖的喜悦瞬间被尴尬所替代。</h4><h4 id="emsp-emsp-早上六点多钟，感受着被窝的暖意，回想着昨天的无趣，顿时感受到了生活的惬意。然而一只手伸了上来打破了这短暂的平衡。昨晚究竟还是吃错了药，答应起来晨跑。最后还是在室友不断地催促下，被迫起床跑步。到十多点钟陪同室友去听了一场专升本职业生涯规划讲座，也更加坚定了要专升本的信念，即便没有那么容易。中午工作室一起聚餐，胡乱吃完回到工作室找了几个海绵垫铺在地上，睡了一会儿。下午还是没什么精神。就这样一下午迷迷糊糊借了本二级office，抱着勉强看了一下，整个人还是昏昏沉沉。晚上勉强支撑着自己坐在电脑前写完这一篇博客。困"><a href="#emsp-emsp-早上六点多钟，感受着被窝的暖意，回想着昨天的无趣，顿时感受到了生活的惬意。然而一只手伸了上来打破了这短暂的平衡。昨晚究竟还是吃错了药，答应起来晨跑。最后还是在室友不断地催促下，被迫起床跑步。到十多点钟陪同室友去听了一场专升本职业生涯规划讲座，也更加坚定了要专升本的信念，即便没有那么容易。中午工作室一起聚餐，胡乱吃完回到工作室找了几个海绵垫铺在地上，睡了一会儿。下午还是没什么精神。就这样一下午迷迷糊糊借了本二级office，抱着勉强看了一下，整个人还是昏昏沉沉。晚上勉强支撑着自己坐在电脑前写完这一篇博客。困" class="headerlink" title="&emsp;&emsp;早上六点多钟，感受着被窝的暖意，回想着昨天的无趣，顿时感受到了生活的惬意。然而一只手伸了上来打破了这短暂的平衡。昨晚究竟还是吃错了药，答应起来晨跑。最后还是在室友不断地催促下，被迫起床跑步。到十多点钟陪同室友去听了一场专升本职业生涯规划讲座，也更加坚定了要专升本的信念，即便没有那么容易。中午工作室一起聚餐，胡乱吃完回到工作室找了几个海绵垫铺在地上，睡了一会儿。下午还是没什么精神。就这样一下午迷迷糊糊借了本二级office，抱着勉强看了一下，整个人还是昏昏沉沉。晚上勉强支撑着自己坐在电脑前写完这一篇博客。困"></a>&emsp;&emsp;早上六点多钟，感受着被窝的暖意，回想着昨天的无趣，顿时感受到了生活的惬意。然而一只手伸了上来打破了这短暂的平衡。昨晚究竟还是吃错了药，答应起来晨跑。最后还是在室友不断地催促下，被迫起床跑步。到十多点钟陪同室友去听了一场专升本职业生涯规划讲座，也更加坚定了要专升本的信念，即便没有那么容易。中午工作室一起聚餐，胡乱吃完回到工作室找了几个海绵垫铺在地上，睡了一会儿。下午还是没什么精神。就这样一下午迷迷糊糊借了本二级office，抱着勉强看了一下，整个人还是昏昏沉沉。晚上勉强支撑着自己坐在电脑前写完这一篇博客。困</h4>]]></content>
+<p><img src="/images/SpringMVC/1.png" alt="Yoyou"><br><img src="/images/SpringMVC/2.png" alt="Yoyou"></p>
+<h4 id="浏览器不响应，控制台响应"><a href="#浏览器不响应，控制台响应" class="headerlink" title="浏览器不响应，控制台响应"></a>浏览器不响应，控制台响应</h4><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="1）tomcat更换至7及以下版本"><a href="#1）tomcat更换至7及以下版本" class="headerlink" title="1）tomcat更换至7及以下版本"></a>1）tomcat更换至7及以下版本</h4><h4 id="2）"><a href="#2）" class="headerlink" title="2）"></a>2）</h4><p><img src="/images/SpringMVC/3.png" alt="Yoyou"></p>
+]]></content>
       <categories>
-        <category>生活杂记</category>
+        <category>SpringMVC</category>
       </categories>
       <tags>
-        <tag>生活杂记</tag>
+        <tag>SpringMVC</tag>
       </tags>
   </entry>
   <entry>
@@ -183,7 +198,7 @@
   <entry>
     <title>Hello World</title>
     <url>/2019/10/31/hello-world/</url>
-    <content><![CDATA[<h2 id="Welcome-to-My-Blog"><a href="#Welcome-to-My-Blog" class="headerlink" title="Welcome to My Blog!!"></a>Welcome to My Blog!!</h2><a id="more"></a>
+    <content><![CDATA[<h2 id="Welcome-to-My-Blog"><a href="#Welcome-to-My-Blog" class="headerlink" title="Welcome to My Blog!!"></a>Welcome to My Blog!!</h2><h4 id="Zhengyoyou记录平时遇到的问题"><a href="#Zhengyoyou记录平时遇到的问题" class="headerlink" title="Zhengyoyou记录平时遇到的问题"></a>Zhengyoyou记录平时遇到的问题</h4><a id="more"></a>
 
 
 <!--
