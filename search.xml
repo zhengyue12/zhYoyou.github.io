@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Docker基本命令</title>
+    <url>/2019/11/30/Docker%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="所在环境："><a href="#所在环境：" class="headerlink" title="所在环境："></a>所在环境：</h2><h4 id="emsp-emsp-Linux-Centos7-内核版本大于3-10"><a href="#emsp-emsp-Linux-Centos7-内核版本大于3-10" class="headerlink" title="&emsp;&emsp;Linux Centos7 内核版本大于3.10"></a>&emsp;&emsp;Linux Centos7 内核版本大于3.10</h4><a id="more"></a>
+<h2 id="Docker基本命令："><a href="#Docker基本命令：" class="headerlink" title="Docker基本命令："></a>Docker基本命令：</h2><h4 id="emsp-emsp-安装"><a href="#emsp-emsp-安装" class="headerlink" title="&emsp;&emsp;安装"></a>&emsp;&emsp;安装</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install docker</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-启动"><a href="#emsp-emsp-启动" class="headerlink" title="&emsp;&emsp;启动"></a>&emsp;&emsp;启动</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-关闭"><a href="#emsp-emsp-关闭" class="headerlink" title="&emsp;&emsp;关闭"></a>&emsp;&emsp;关闭</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl stop docker</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-镜像检索"><a href="#emsp-emsp-镜像检索" class="headerlink" title="&emsp;&emsp;镜像检索"></a>&emsp;&emsp;镜像检索</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker search 关键字</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-镜像拉取"><a href="#emsp-emsp-镜像拉取" class="headerlink" title="&emsp;&emsp;镜像拉取"></a>&emsp;&emsp;镜像拉取</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker pull 镜像名:标签号</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-查看镜像"><a href="#emsp-emsp-查看镜像" class="headerlink" title="&emsp;&emsp;查看镜像"></a>&emsp;&emsp;查看镜像</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-删除镜像"><a href="#emsp-emsp-删除镜像" class="headerlink" title="&emsp;&emsp;删除镜像"></a>&emsp;&emsp;删除镜像</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker rmi 镜像id</span><br></pre></td></tr></table></figure>
+<h2 id="容器操作命令："><a href="#容器操作命令：" class="headerlink" title="容器操作命令："></a>容器操作命令：</h2><h4 id="emsp-emsp-根据镜像运行容器（-d后台运行，-p新端口号：映射容器内部端口）"><a href="#emsp-emsp-根据镜像运行容器（-d后台运行，-p新端口号：映射容器内部端口）" class="headerlink" title="&emsp;&emsp;根据镜像运行容器（-d后台运行，-p新端口号：映射容器内部端口）"></a>&emsp;&emsp;根据镜像运行容器（-d后台运行，-p新端口号：映射容器内部端口）</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker run --name 自定义容器名 -d -p 新端口:映射端口 镜像名:tag号（默认latest）</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-列表（-a可以查看所有容器）"><a href="#emsp-emsp-列表（-a可以查看所有容器）" class="headerlink" title="&emsp;&emsp;列表（-a可以查看所有容器）"></a>&emsp;&emsp;列表（-a可以查看所有容器）</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker ps -a</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-停止容器"><a href="#emsp-emsp-停止容器" class="headerlink" title="&emsp;&emsp;停止容器"></a>&emsp;&emsp;停止容器</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker stop 容器的id</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-启动容器"><a href="#emsp-emsp-启动容器" class="headerlink" title="&emsp;&emsp;启动容器"></a>&emsp;&emsp;启动容器</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker start 容器的id</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-删除删除指定容器"><a href="#emsp-emsp-删除删除指定容器" class="headerlink" title="&emsp;&emsp;删除删除指定容器"></a>&emsp;&emsp;删除删除指定容器</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker rm 容器id</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-容器日志"><a href="#emsp-emsp-容器日志" class="headerlink" title="&emsp;&emsp;容器日志"></a>&emsp;&emsp;容器日志</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker logs 容器id</span><br></pre></td></tr></table></figure>
+<hr>
+<h6 id="emsp-emsp-晚上和室友站在阳台上抽了第一根烟，很涩。抽完头有些昏沉沉的，也想了很多。你的喜欢我当真承受不起，在你全盘否定我的感情的时候，我也想通了。现在这样也好，这样对你我来说都是一个好的选择吧。"><a href="#emsp-emsp-晚上和室友站在阳台上抽了第一根烟，很涩。抽完头有些昏沉沉的，也想了很多。你的喜欢我当真承受不起，在你全盘否定我的感情的时候，我也想通了。现在这样也好，这样对你我来说都是一个好的选择吧。" class="headerlink" title="&emsp;&emsp;晚上和室友站在阳台上抽了第一根烟，很涩。抽完头有些昏沉沉的，也想了很多。你的喜欢我当真承受不起，在你全盘否定我的感情的时候，我也想通了。现在这样也好，这样对你我来说都是一个好的选择吧。"></a>&emsp;&emsp;晚上和室友站在阳台上抽了第一根烟，很涩。抽完头有些昏沉沉的，也想了很多。你的喜欢我当真承受不起，在你全盘否定我的感情的时候，我也想通了。现在这样也好，这样对你我来说都是一个好的选择吧。</h6><h6 align="right">2019/11/30</h6>]]></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Elipse中SpringMVC加上注解没有提示</title>
     <url>/2019/11/28/Elipse%E4%B8%ADSpringMVC%E5%8A%A0%E4%B8%8A%E6%B3%A8%E8%A7%A3%E6%B2%A1%E6%9C%89%E6%8F%90%E7%A4%BA/</url>
-    <content><![CDATA[<a id="more"></a>
-<h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><h4 id="Elipse中加上SpringMVC相关注解时，没有代码提示"><a href="#Elipse中加上SpringMVC相关注解时，没有代码提示" class="headerlink" title="Elipse中加上SpringMVC相关注解时，没有代码提示"></a>Elipse中加上SpringMVC相关注解时，没有代码提示</h4><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="取消勾选红圈选项"><a href="#取消勾选红圈选项" class="headerlink" title="取消勾选红圈选项"></a>取消勾选红圈选项</h4><p><img src="/images/SpringMVC/4.png" alt="Yoyou"></p>
+    <content><![CDATA[<h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><h4 id="Elipse中加上SpringMVC相关注解时，没有代码提示"><a href="#Elipse中加上SpringMVC相关注解时，没有代码提示" class="headerlink" title="Elipse中加上SpringMVC相关注解时，没有代码提示"></a>Elipse中加上SpringMVC相关注解时，没有代码提示</h4><a id="more"></a>
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="取消勾选红圈选项"><a href="#取消勾选红圈选项" class="headerlink" title="取消勾选红圈选项"></a>取消勾选红圈选项</h4><p><img src="/images/SpringMVC/4.png" alt="Yoyou"></p>
 ]]></content>
       <categories>
         <category>SpringMVC</category>
@@ -112,8 +138,9 @@
   <entry>
     <title>SpringMVC的PUT、DELETE响应问题</title>
     <url>/2019/11/10/SpringMVC%E7%9A%84PUT%E3%80%81DELETE%E5%93%8D%E5%BA%94%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<a id="more"></a>
-<p><img src="/images/SpringMVC/1.png" alt="Yoyou"><br><img src="/images/SpringMVC/2.png" alt="Yoyou"></p>
+    <content><![CDATA[<p><img src="/images/SpringMVC/1.png" alt="Yoyou"></p>
+<a id="more"></a>
+<p><img src="/images/SpringMVC/2.png" alt="Yoyou"></p>
 <h4 id="浏览器不响应，控制台响应"><a href="#浏览器不响应，控制台响应" class="headerlink" title="浏览器不响应，控制台响应"></a>浏览器不响应，控制台响应</h4><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="1）tomcat更换至7及以下版本"><a href="#1）tomcat更换至7及以下版本" class="headerlink" title="1）tomcat更换至7及以下版本"></a>1）tomcat更换至7及以下版本</h4><h4 id="2）"><a href="#2）" class="headerlink" title="2）"></a>2）</h4><p><img src="/images/SpringMVC/3.png" alt="Yoyou"></p>
 ]]></content>
       <categories>
@@ -148,7 +175,8 @@
   <entry>
     <title>MongoDB连接报错shutting down with code:100</title>
     <url>/2019/11/02/MongoDB%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E2%80%A6%E2%80%A6code-100/</url>
-    <content><![CDATA[<h3 id="连接MongoDB时，报错如下："><a href="#连接MongoDB时，报错如下：" class="headerlink" title="连接MongoDB时，报错如下："></a>连接MongoDB时，报错如下：</h3><h4 id="2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting"><a href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting" class="headerlink" title="2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting"></a>2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting</h4><h4 id="2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100"><a href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100" class="headerlink" title="2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100"></a>2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100</h4><h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><h4 id="mongodb非正常关闭"><a href="#mongodb非正常关闭" class="headerlink" title="mongodb非正常关闭"></a>mongodb非正常关闭</h4><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="删除db目录下的mongod-lock文件即可"><a href="#删除db目录下的mongod-lock文件即可" class="headerlink" title="删除db目录下的mongod.lock文件即可."></a>删除db目录下的mongod.lock文件即可.</h4>]]></content>
+    <content><![CDATA[<h3 id="连接MongoDB时，报错如下："><a href="#连接MongoDB时，报错如下：" class="headerlink" title="连接MongoDB时，报错如下："></a>连接MongoDB时，报错如下：</h3><h4 id="2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting"><a href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-now-exiting" class="headerlink" title="2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting"></a>2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] now exiting</h4><h4 id="2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100"><a href="#2018-07-20T22-42-08-645-0800-I-CONTROL-initandlisten-shutting-down-with-code-100" class="headerlink" title="2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100"></a>2018-07-20T22:42:08.645+0800 I CONTROL  [initandlisten] shutting down with code:100</h4><a id="more"></a>
+<h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><h4 id="mongodb非正常关闭"><a href="#mongodb非正常关闭" class="headerlink" title="mongodb非正常关闭"></a>mongodb非正常关闭</h4><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><h4 id="删除db目录下的mongod-lock文件即可"><a href="#删除db目录下的mongod-lock文件即可" class="headerlink" title="删除db目录下的mongod.lock文件即可."></a>删除db目录下的mongod.lock文件即可.</h4>]]></content>
       <categories>
         <category>数据库</category>
         <category>MongoDB</category>
@@ -162,6 +190,7 @@
     <title>MySQL名字包含特殊符号的库无法创建或删除</title>
     <url>/2019/11/02/MySQL%E5%90%8D%E5%AD%97%E5%8C%85%E5%90%AB%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E7%9A%84%E5%BA%93%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA%E6%88%96%E5%88%A0%E9%99%A4/</url>
     <content><![CDATA[<p><img src="/images/hexo/3.png" alt="Yoyou"></p>
+<a id="more"></a>
 <h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><h4 id="库名用-Esc下的键-符号包裹，效果如下"><a href="#库名用-Esc下的键-符号包裹，效果如下" class="headerlink" title="库名用`(Esc下的键)符号包裹，效果如下"></a>库名用`(Esc下的键)符号包裹，效果如下</h4><p><img src="/images/hexo/4.png" alt="Yoyou"></p>
 ]]></content>
       <categories>
@@ -176,7 +205,8 @@
   <entry>
     <title>使用Hexo+Github搭建属于自己的个人博客</title>
     <url>/2019/11/01/%E4%BD%BF%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="使用Hexo-Github搭建属于自己的个人博客"><a href="#使用Hexo-Github搭建属于自己的个人博客" class="headerlink" title="使用Hexo+Github搭建属于自己的个人博客"></a>使用Hexo+Github搭建属于自己的个人博客</h1><h2 id="（一）前期准备"><a href="#（一）前期准备" class="headerlink" title="（一）前期准备"></a>（一）前期准备</h2><h4 id="emsp-emsp-Node-js（node-v，-npm-v-检测安装）"><a href="#emsp-emsp-Node-js（node-v，-npm-v-检测安装）" class="headerlink" title="&emsp;&emsp;Node.js（node -v， npm -v 检测安装）"></a>&emsp;&emsp;Node.js（node -v， npm -v 检测安装）</h4><h4 id="emsp-emsp-Git"><a href="#emsp-emsp-Git" class="headerlink" title="&emsp;&emsp;Git"></a>&emsp;&emsp;Git</h4><h4 id="emsp-emsp-sublime（文本编辑器仅供参考，凭个人喜好选择）"><a href="#emsp-emsp-sublime（文本编辑器仅供参考，凭个人喜好选择）" class="headerlink" title="&emsp;&emsp;sublime（文本编辑器仅供参考，凭个人喜好选择）"></a>&emsp;&emsp;sublime（文本编辑器仅供参考，凭个人喜好选择）</h4><h4 id="emsp-emsp-注册GitHub，新建一个仓库，仓库名以（xxx-github-io）为标准"><a href="#emsp-emsp-注册GitHub，新建一个仓库，仓库名以（xxx-github-io）为标准" class="headerlink" title="&emsp;&emsp;注册GitHub，新建一个仓库，仓库名以（xxx.github.io）为标准"></a>&emsp;&emsp;注册GitHub，新建一个仓库，仓库名以（xxx.github.io）为标准</h4><h2 id="（二）安装Hexo"><a href="#（二）安装Hexo" class="headerlink" title="（二）安装Hexo"></a>（二）安装Hexo</h2><h4 id="emsp-emsp-在自己喜欢的目录下新建一个放置博客文件夹的目录"><a href="#emsp-emsp-在自己喜欢的目录下新建一个放置博客文件夹的目录" class="headerlink" title="&emsp;&emsp;在自己喜欢的目录下新建一个放置博客文件夹的目录"></a>&emsp;&emsp;在自己喜欢的目录下新建一个放置博客文件夹的目录</h4><h4 id="emsp-emsp-使用Git进入到此目录，执行以下命令"><a href="#emsp-emsp-使用Git进入到此目录，执行以下命令" class="headerlink" title="&emsp;&emsp;使用Git进入到此目录，执行以下命令"></a>&emsp;&emsp;使用Git进入到此目录，执行以下命令</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h1 id="使用Hexo-Github搭建属于自己的个人博客"><a href="#使用Hexo-Github搭建属于自己的个人博客" class="headerlink" title="使用Hexo+Github搭建属于自己的个人博客"></a>使用Hexo+Github搭建属于自己的个人博客</h1><h2 id="（一）前期准备"><a href="#（一）前期准备" class="headerlink" title="（一）前期准备"></a>（一）前期准备</h2><h4 id="emsp-emsp-Node-js（node-v，-npm-v-检测安装）"><a href="#emsp-emsp-Node-js（node-v，-npm-v-检测安装）" class="headerlink" title="&emsp;&emsp;Node.js（node -v， npm -v 检测安装）"></a>&emsp;&emsp;Node.js（node -v， npm -v 检测安装）</h4><h4 id="emsp-emsp-Git"><a href="#emsp-emsp-Git" class="headerlink" title="&emsp;&emsp;Git"></a>&emsp;&emsp;Git</h4><h4 id="emsp-emsp-sublime（文本编辑器仅供参考，凭个人喜好选择）"><a href="#emsp-emsp-sublime（文本编辑器仅供参考，凭个人喜好选择）" class="headerlink" title="&emsp;&emsp;sublime（文本编辑器仅供参考，凭个人喜好选择）"></a>&emsp;&emsp;sublime（文本编辑器仅供参考，凭个人喜好选择）</h4><h4 id="emsp-emsp-注册GitHub，新建一个仓库，仓库名以（xxx-github-io）为标准"><a href="#emsp-emsp-注册GitHub，新建一个仓库，仓库名以（xxx-github-io）为标准" class="headerlink" title="&emsp;&emsp;注册GitHub，新建一个仓库，仓库名以（xxx.github.io）为标准"></a>&emsp;&emsp;注册GitHub，新建一个仓库，仓库名以（xxx.github.io）为标准</h4><a id="more"></a>
+<h2 id="（二）安装Hexo"><a href="#（二）安装Hexo" class="headerlink" title="（二）安装Hexo"></a>（二）安装Hexo</h2><h4 id="emsp-emsp-在自己喜欢的目录下新建一个放置博客文件夹的目录"><a href="#emsp-emsp-在自己喜欢的目录下新建一个放置博客文件夹的目录" class="headerlink" title="&emsp;&emsp;在自己喜欢的目录下新建一个放置博客文件夹的目录"></a>&emsp;&emsp;在自己喜欢的目录下新建一个放置博客文件夹的目录</h4><h4 id="emsp-emsp-使用Git进入到此目录，执行以下命令"><a href="#emsp-emsp-使用Git进入到此目录，执行以下命令" class="headerlink" title="&emsp;&emsp;使用Git进入到此目录，执行以下命令"></a>&emsp;&emsp;使用Git进入到此目录，执行以下命令</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
 <h2 id="（三）初始化博客"><a href="#（三）初始化博客" class="headerlink" title="（三）初始化博客"></a>（三）初始化博客</h2><h4 id="emsp-emsp-初始化"><a href="#emsp-emsp-初始化" class="headerlink" title="&emsp;&emsp;初始化"></a>&emsp;&emsp;初始化</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm init 博客名</span><br></pre></td></tr></table></figure>
 <h4 id="emsp-emsp-进入到新创建的博客目录下，安装相关的依赖"><a href="#emsp-emsp-进入到新创建的博客目录下，安装相关的依赖" class="headerlink" title="&emsp;&emsp;进入到新创建的博客目录下，安装相关的依赖"></a>&emsp;&emsp;进入到新创建的博客目录下，安装相关的依赖</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
