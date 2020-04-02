@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="算法,递归," />
 
 
 
@@ -86,11 +86,15 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yoyou的Blog">
-<meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;tags&#x2F;Restful&#x2F;index.html">
+<meta name="description" content="题目描述：在n×n 格的棋盘上放置彼此不受攻击的n 个皇后。按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。n后问题等价于在n×n格的棋盘上放置n个皇后，任何2 个皇后不放在同一行或同一列或同一斜线上。设计一个解 n 后问题的队列式分支限界法。计算在n*n个方格上放置彼此不受攻击的n个皇后的一个放置方案。">
+<meta name="keywords" content="算法,递归">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【递归】N皇后问题">
+<meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;2020&#x2F;04&#x2F;02&#x2F;%E3%80%90%E9%80%92%E5%BD%92%E3%80%91N%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98&#x2F;index.html">
 <meta property="og:site_name" content="Yoyou的Blog">
+<meta property="og:description" content="题目描述：在n×n 格的棋盘上放置彼此不受攻击的n 个皇后。按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。n后问题等价于在n×n格的棋盘上放置n个皇后，任何2 个皇后不放在同一行或同一列或同一斜线上。设计一个解 n 后问题的队列式分支限界法。计算在n*n个方格上放置彼此不受攻击的n个皇后的一个放置方案。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-04-02T05:13:54.119Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -121,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="https://zhengyue12.github.io/tags/Restful/"/>
+  <link rel="canonical" href="https://zhengyue12.github.io/2020/04/02/【递归】N皇后问题/"/>
 
 
 
 
 
-  <title>标签: Restful | Yoyou的Blog</title>
+  <title>【递归】N皇后问题 | Yoyou的Blog</title>
   
 
 
@@ -146,7 +150,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -274,54 +278,222 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Restful<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/04/02/%E3%80%90%E9%80%92%E5%BD%92%E3%80%91N%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zheng Yoyou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/yy.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yoyou的Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2020/03/30/Ajax%E5%8F%91%E9%80%81PUT%E8%AF%B7%E6%B1%82%E6%97%B6%E5%BC%95%E5%8F%91%E7%9A%84%E8%A1%80%E6%A1%88/" itemprop="url">
-              
-                <span itemprop="name">Ajax发送PUT请求时引发的血案</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">【递归】N皇后问题</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-03-30T22:28:38+08:00"
-              content="2020-03-30" >
-          03-30
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-02T13:01:34+08:00">
+                2020-04-02
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95/%E9%80%92%E5%BD%92/" itemprop="url" rel="index">
+                    <span itemprop="name">递归</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本页总阅读数<i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        <h2 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h2><h4 id="在n×n-格的棋盘上放置彼此不受攻击的n-个皇后。按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。n后问题等价于在n×n格的棋盘上放置n个皇后，任何2-个皇后不放在同一行或同一列或同一斜线上。"><a href="#在n×n-格的棋盘上放置彼此不受攻击的n-个皇后。按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。n后问题等价于在n×n格的棋盘上放置n个皇后，任何2-个皇后不放在同一行或同一列或同一斜线上。" class="headerlink" title="在n×n 格的棋盘上放置彼此不受攻击的n 个皇后。按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。n后问题等价于在n×n格的棋盘上放置n个皇后，任何2 个皇后不放在同一行或同一列或同一斜线上。"></a>在n×n 格的棋盘上放置彼此不受攻击的n 个皇后。按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。n后问题等价于在n×n格的棋盘上放置n个皇后，任何2 个皇后不放在同一行或同一列或同一斜线上。</h4><h4 id="设计一个解-n-后问题的队列式分支限界法。计算在n-n个方格上放置彼此不受攻击的n个皇后的一个放置方案。"><a href="#设计一个解-n-后问题的队列式分支限界法。计算在n-n个方格上放置彼此不受攻击的n个皇后的一个放置方案。" class="headerlink" title="设计一个解 n 后问题的队列式分支限界法。计算在n*n个方格上放置彼此不受攻击的n个皇后的一个放置方案。"></a>设计一个解 n 后问题的队列式分支限界法。计算在n*n个方格上放置彼此不受攻击的n个皇后的一个放置方案。</h4><a id="more"></a>
+<h2 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h2><h4 id="1-个正整数n"><a href="#1-个正整数n" class="headerlink" title="1 个正整数n"></a>1 个正整数n</h4><h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h2><h4 id="输出计算出的彼此不受攻击的n个皇后的一个放置方案。"><a href="#输出计算出的彼此不受攻击的n个皇后的一个放置方案。" class="headerlink" title="输出计算出的彼此不受攻击的n个皇后的一个放置方案。"></a>输出计算出的彼此不受攻击的n个皇后的一个放置方案。</h4><h2 id="输人样例："><a href="#输人样例：" class="headerlink" title="输人样例："></a>输人样例：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure>
+<h2 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 3 5 2 4</span><br></pre></td></tr></table></figure>
+<h2 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h2><h4 id="记录下已经摆放完成的n-1个皇后的列序号，对比当前的列序号、行号、斜对角（处于同一斜对角线的两个皇后的列序号和行号的差一样）的是否一致，如果一致不能摆放。直到最后一个摆放完成即可。"><a href="#记录下已经摆放完成的n-1个皇后的列序号，对比当前的列序号、行号、斜对角（处于同一斜对角线的两个皇后的列序号和行号的差一样）的是否一致，如果一致不能摆放。直到最后一个摆放完成即可。" class="headerlink" title="记录下已经摆放完成的n-1个皇后的列序号，对比当前的列序号、行号、斜对角（处于同一斜对角线的两个皇后的列序号和行号的差一样）的是否一致，如果一致不能摆放。直到最后一个摆放完成即可。"></a>记录下已经摆放完成的n-1个皇后的列序号，对比当前的列序号、行号、斜对角（处于同一斜对角线的两个皇后的列序号和行号的差一样）的是否一致，如果一致不能摆放。直到最后一个摆放完成即可。</h4><h2 id="AC代码："><a href="#AC代码：" class="headerlink" title="AC代码："></a>AC代码：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;cmath&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int n;//输入数据 </span><br><span class="line">int option[100];//保存每一个皇后所在的列号 </span><br><span class="line">int flag=0;</span><br><span class="line">void putQueen(int k)&#123;</span><br><span class="line">	if(k==n&amp;&amp;!flag)&#123;</span><br><span class="line">		for(int i=0;i&lt;n;++i)</span><br><span class="line">			cout&lt;&lt;option[i]+1&lt;&lt;&quot; &quot;;</span><br><span class="line">		cout&lt;&lt;endl;</span><br><span class="line">		flag++;</span><br><span class="line">	&#125;</span><br><span class="line">	for(int i=0;i&lt;n;++i)&#123;</span><br><span class="line">		int j;</span><br><span class="line">		for(j=0;j&lt;k;++j)&#123;//和已经摆放好的k个皇后进行比较 </span><br><span class="line">			if(i==option[j] || abs(k-j)==abs(i-option[j]))&#123;</span><br><span class="line">				break;</span><br><span class="line">			&#125; </span><br><span class="line">		&#125;</span><br><span class="line">		if(j==k)&#123;</span><br><span class="line">			option[k]=i;</span><br><span class="line">			putQueen(k+1);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return;</span><br><span class="line">&#125;</span><br><span class="line">int main() &#123;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	putQueen(0);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果你觉得有帮助，慷慨如你，可以扫描下面的二维码赞赏一下</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/yy.jpg" alt="Zheng Yoyou 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/yy.jpg" alt="Zheng Yoyou 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+          
+            <a href="/tags/%E9%80%92%E5%BD%92/" rel="tag"># 递归</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/03/30/Tomcat%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" rel="next" title="Tomcat提交数据乱码问题">
+                <i class="fa fa-chevron-left"></i> Tomcat提交数据乱码问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/04/02/%E3%80%90%E9%80%92%E5%BD%92%E3%80%91%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98/" rel="prev" title="【递归】汉诺塔问题">
+                【递归】汉诺塔问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -329,6 +501,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -349,8 +525,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -369,7 +554,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -380,7 +565,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -448,6 +633,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述："><span class="nav-number">1.</span> <span class="nav-text">题目描述：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在n×n-格的棋盘上放置彼此不受攻击的n-个皇后。按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。n后问题等价于在n×n格的棋盘上放置n个皇后，任何2-个皇后不放在同一行或同一列或同一斜线上。"><span class="nav-number">1.0.1.</span> <span class="nav-text">在n×n 格的棋盘上放置彼此不受攻击的n 个皇后。按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。n后问题等价于在n×n格的棋盘上放置n个皇后，任何2 个皇后不放在同一行或同一列或同一斜线上。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设计一个解-n-后问题的队列式分支限界法。计算在n-n个方格上放置彼此不受攻击的n个皇后的一个放置方案。"><span class="nav-number">1.0.2.</span> <span class="nav-text">设计一个解 n 后问题的队列式分支限界法。计算在n*n个方格上放置彼此不受攻击的n个皇后的一个放置方案。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入格式："><span class="nav-number">2.</span> <span class="nav-text">输入格式：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-个正整数n"><span class="nav-number">2.0.1.</span> <span class="nav-text">1 个正整数n</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输出格式"><span class="nav-number">3.</span> <span class="nav-text">输出格式:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输出计算出的彼此不受攻击的n个皇后的一个放置方案。"><span class="nav-number">3.0.1.</span> <span class="nav-text">输出计算出的彼此不受攻击的n个皇后的一个放置方案。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输人样例："><span class="nav-number">4.</span> <span class="nav-text">输人样例：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输出样例"><span class="nav-number">5.</span> <span class="nav-text">输出样例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解题思路："><span class="nav-number">6.</span> <span class="nav-text">解题思路：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#记录下已经摆放完成的n-1个皇后的列序号，对比当前的列序号、行号、斜对角（处于同一斜对角线的两个皇后的列序号和行号的差一样）的是否一致，如果一致不能摆放。直到最后一个摆放完成即可。"><span class="nav-number">6.0.1.</span> <span class="nav-text">记录下已经摆放完成的n-1个皇后的列序号，对比当前的列序号、行号、斜对角（处于同一斜对角线的两个皇后的列序号和行号的差一样）的是否一致，如果一致不能摆放。直到最后一个摆放完成即可。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AC代码："><span class="nav-number">7.</span> <span class="nav-text">AC代码：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -628,6 +829,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
