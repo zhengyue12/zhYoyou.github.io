@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Tomcat," />
+  <meta name="keywords" content="中间件,Tomcat," />
 
 
 
@@ -87,14 +87,14 @@
 
 
 <meta name="description" content="请求乱码：&amp;emsp;&amp;emsp;GET请求：&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;更改server.xml；在8080断口处加上URIEncoding=“UTF-8”&amp;emsp;&amp;emsp;POST请求：&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;在第一个获取请求参数之前数值">
-<meta name="keywords" content="Tomcat">
+<meta name="keywords" content="中间件,Tomcat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tomcat提交数据乱码问题">
 <meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;2020&#x2F;03&#x2F;30&#x2F;Tomcat%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98&#x2F;index.html">
 <meta property="og:site_name" content="Yoyou的Blog">
 <meta property="og:description" content="请求乱码：&amp;emsp;&amp;emsp;GET请求：&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;更改server.xml；在8080断口处加上URIEncoding=“UTF-8”&amp;emsp;&amp;emsp;POST请求：&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;在第一个获取请求参数之前数值">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-30T14:45:13.197Z">
+<meta property="og:updated_time" content="2020-05-15T00:03:19.641Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -344,7 +344,18 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Tomcat/" itemprop="url" rel="index">
+                  <a href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/" itemprop="url" rel="index">
+                    <span itemprop="name">中间件</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/Tomcat/" itemprop="url" rel="index">
                     <span itemprop="name">Tomcat</span>
                   </a>
                 </span>
@@ -387,8 +398,8 @@
 
       
         <h2 id="请求乱码："><a href="#请求乱码：" class="headerlink" title="请求乱码："></a>请求乱码：</h2><h4 id="emsp-emsp-GET请求："><a href="#emsp-emsp-GET请求：" class="headerlink" title="&emsp;&emsp;GET请求："></a>&emsp;&emsp;GET请求：</h4><h4 id="emsp-emsp-emsp-emsp-更改server-xml；在8080断口处加上URIEncoding-“UTF-8”"><a href="#emsp-emsp-emsp-emsp-更改server-xml；在8080断口处加上URIEncoding-“UTF-8”" class="headerlink" title="&emsp;&emsp;&emsp;&emsp;更改server.xml；在8080断口处加上URIEncoding=“UTF-8”"></a>&emsp;&emsp;&emsp;&emsp;更改server.xml；在8080断口处加上URIEncoding=“UTF-8”</h4><h4 id="emsp-emsp-POST请求："><a href="#emsp-emsp-POST请求：" class="headerlink" title="&emsp;&emsp;POST请求："></a>&emsp;&emsp;POST请求：</h4><h4 id="emsp-emsp-emsp-emsp-在第一个获取请求参数之前数值"><a href="#emsp-emsp-emsp-emsp-在第一个获取请求参数之前数值" class="headerlink" title="&emsp;&emsp;&emsp;&emsp;在第一个获取请求参数之前数值"></a>&emsp;&emsp;&emsp;&emsp;在第一个获取请求参数之前数值</h4><a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">request.setCharacterEncoding(&quot;UTF-8&quot;);</span><br></pre></td></tr></table></figure>
-<h2 id="响应乱码："><a href="#响应乱码：" class="headerlink" title="响应乱码："></a>响应乱码：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.setContentType(&quot;text/html;charset=utf-8&quot;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">request.setCharacterEncoding(<span class="string">"UTF-8"</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="响应乱码："><a href="#响应乱码：" class="headerlink" title="响应乱码："></a>响应乱码：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.setContentType(<span class="string">"text/html;charset=utf-8"</span>);</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -433,6 +444,8 @@
     <footer class="post-footer">
       
         <div class="post-tags">
+          
+            <a href="/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/" rel="tag"># 中间件</a>
           
             <a href="/tags/Tomcat/" rel="tag"># Tomcat</a>
           
@@ -540,7 +553,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -551,7 +564,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -562,7 +575,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

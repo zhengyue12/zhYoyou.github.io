@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Docker," />
+  <meta name="keywords" content="运维,Docker," />
 
 
 
@@ -87,14 +87,14 @@
 
 
 <meta name="description" content="所在环境：&amp;emsp;&amp;emsp;Linux Centos7 内核版本大于3.10">
-<meta name="keywords" content="Docker">
+<meta name="keywords" content="运维,Docker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker基本命令">
 <meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;2019&#x2F;11&#x2F;30&#x2F;Docker%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4&#x2F;index.html">
 <meta property="og:site_name" content="Yoyou的Blog">
 <meta property="og:description" content="所在环境：&amp;emsp;&amp;emsp;Linux Centos7 内核版本大于3.10">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-02-27T10:54:26.168Z">
+<meta property="og:updated_time" content="2020-05-15T00:02:11.281Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -344,7 +344,18 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Docker/" itemprop="url" rel="index">
+                  <a href="/categories/%E8%BF%90%E7%BB%B4/" itemprop="url" rel="index">
+                    <span itemprop="name">运维</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BF%90%E7%BB%B4/Docker/" itemprop="url" rel="index">
                     <span itemprop="name">Docker</span>
                   </a>
                 </span>
@@ -387,13 +398,13 @@
 
       
         <h2 id="所在环境："><a href="#所在环境：" class="headerlink" title="所在环境："></a>所在环境：</h2><h4 id="emsp-emsp-Linux-Centos7-内核版本大于3-10"><a href="#emsp-emsp-Linux-Centos7-内核版本大于3-10" class="headerlink" title="&emsp;&emsp;Linux Centos7 内核版本大于3.10"></a>&emsp;&emsp;Linux Centos7 内核版本大于3.10</h4><a id="more"></a>
-<h2 id="Docker基本命令："><a href="#Docker基本命令：" class="headerlink" title="Docker基本命令："></a>Docker基本命令：</h2><h4 id="emsp-emsp-安装"><a href="#emsp-emsp-安装" class="headerlink" title="&emsp;&emsp;安装"></a>&emsp;&emsp;安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install docker</span><br></pre></td></tr></table></figure>
-<h4 id="emsp-emsp-启动"><a href="#emsp-emsp-启动" class="headerlink" title="&emsp;&emsp;启动"></a>&emsp;&emsp;启动</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
-<h4 id="emsp-emsp-关闭"><a href="#emsp-emsp-关闭" class="headerlink" title="&emsp;&emsp;关闭"></a>&emsp;&emsp;关闭</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop docker</span><br></pre></td></tr></table></figure>
-<h4 id="emsp-emsp-镜像检索"><a href="#emsp-emsp-镜像检索" class="headerlink" title="&emsp;&emsp;镜像检索"></a>&emsp;&emsp;镜像检索</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search 关键字</span><br></pre></td></tr></table></figure>
-<h4 id="emsp-emsp-镜像拉取"><a href="#emsp-emsp-镜像拉取" class="headerlink" title="&emsp;&emsp;镜像拉取"></a>&emsp;&emsp;镜像拉取</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull 镜像名:标签号</span><br></pre></td></tr></table></figure>
-<h4 id="emsp-emsp-查看镜像"><a href="#emsp-emsp-查看镜像" class="headerlink" title="&emsp;&emsp;查看镜像"></a>&emsp;&emsp;查看镜像</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
-<h4 id="emsp-emsp-删除镜像"><a href="#emsp-emsp-删除镜像" class="headerlink" title="&emsp;&emsp;删除镜像"></a>&emsp;&emsp;删除镜像</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi 镜像id</span><br></pre></td></tr></table></figure>
+<h2 id="Docker基本命令："><a href="#Docker基本命令：" class="headerlink" title="Docker基本命令："></a>Docker基本命令：</h2><h4 id="emsp-emsp-安装"><a href="#emsp-emsp-安装" class="headerlink" title="&emsp;&emsp;安装"></a>&emsp;&emsp;安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install docker</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-启动"><a href="#emsp-emsp-启动" class="headerlink" title="&emsp;&emsp;启动"></a>&emsp;&emsp;启动</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-关闭"><a href="#emsp-emsp-关闭" class="headerlink" title="&emsp;&emsp;关闭"></a>&emsp;&emsp;关闭</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop docker</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-镜像检索"><a href="#emsp-emsp-镜像检索" class="headerlink" title="&emsp;&emsp;镜像检索"></a>&emsp;&emsp;镜像检索</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search 关键字</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-镜像拉取"><a href="#emsp-emsp-镜像拉取" class="headerlink" title="&emsp;&emsp;镜像拉取"></a>&emsp;&emsp;镜像拉取</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull 镜像名:标签号</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-查看镜像"><a href="#emsp-emsp-查看镜像" class="headerlink" title="&emsp;&emsp;查看镜像"></a>&emsp;&emsp;查看镜像</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
+<h4 id="emsp-emsp-删除镜像"><a href="#emsp-emsp-删除镜像" class="headerlink" title="&emsp;&emsp;删除镜像"></a>&emsp;&emsp;删除镜像</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi 镜像id</span><br></pre></td></tr></table></figure>
 <h2 id="容器操作命令："><a href="#容器操作命令：" class="headerlink" title="容器操作命令："></a>容器操作命令：</h2><h4 id="emsp-emsp-根据镜像运行容器（-d后台运行，-p新端口号：映射容器内部端口）"><a href="#emsp-emsp-根据镜像运行容器（-d后台运行，-p新端口号：映射容器内部端口）" class="headerlink" title="&emsp;&emsp;根据镜像运行容器（-d后台运行，-p新端口号：映射容器内部端口）"></a>&emsp;&emsp;根据镜像运行容器（-d后台运行，-p新端口号：映射容器内部端口）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name 自定义容器名 -d -p 新端口:映射端口 镜像名:tag号（默认latest）</span><br></pre></td></tr></table></figure>
 <h4 id="emsp-emsp-列表（-a可以查看所有容器）"><a href="#emsp-emsp-列表（-a可以查看所有容器）" class="headerlink" title="&emsp;&emsp;列表（-a可以查看所有容器）"></a>&emsp;&emsp;列表（-a可以查看所有容器）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps -a</span><br></pre></td></tr></table></figure>
 <h4 id="emsp-emsp-停止容器"><a href="#emsp-emsp-停止容器" class="headerlink" title="&emsp;&emsp;停止容器"></a>&emsp;&emsp;停止容器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop 容器的id</span><br></pre></td></tr></table></figure>
@@ -450,6 +461,8 @@
       
         <div class="post-tags">
           
+            <a href="/tags/%E8%BF%90%E7%BB%B4/" rel="tag"># 运维</a>
+          
             <a href="/tags/Docker/" rel="tag"># Docker</a>
           
         </div>
@@ -473,8 +486,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/03/30/%E3%80%90%E8%B4%AA%E5%BF%83%E3%80%91%E8%B4%B9%E7%94%A8%E6%9C%80%E5%B0%91/" rel="prev" title="【贪心】费用最少">
-                【贪心】费用最少 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/03/30/%E3%80%90%E6%A8%A1%E6%8B%9F%E3%80%91%E8%AE%A1%E7%AE%97%E5%99%A8%E7%9A%84%E6%94%B9%E8%89%AF/" rel="prev" title="【模拟】计算器的改良">
+                【模拟】计算器的改良 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -556,7 +569,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -567,7 +580,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -578,7 +591,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
