@@ -91,11 +91,11 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringBoot定时任务">
 <meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;2020&#x2F;05&#x2F;15&#x2F;SpringBoot%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1&#x2F;index.html">
-<meta property="og:site_name" content="Yoyou的Blog">
+<meta property="og:site_name" content="Try Again">
 <meta property="og:description" content="依赖：只需导入Springboot操作过程：1. SpringBoot启动类类上添加@EnableScheduling注解，开启定时任务">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;images&#x2F;Java&#x2F;3.png">
-<meta property="og:updated_time" content="2020-05-16T04:02:43.137Z">
+<meta property="og:updated_time" content="2020-05-16T11:51:32.382Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;images&#x2F;Java&#x2F;3.png">
 
@@ -133,7 +133,7 @@
 
 
 
-  <title>SpringBoot定时任务 | Yoyou的Blog</title>
+  <title>SpringBoot定时任务 | Try Again</title>
   
 
 
@@ -163,12 +163,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Yoyou的Blog</span>
+        <span class="site-title">Try Again</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">Nothing is impossible！！</p>
       
   </div>
 
@@ -297,13 +297,13 @@
     <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/05/15/SpringBoot%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zheng Yoyou">
+      <meta itemprop="name" content="Culaccino">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/yy.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yoyou的Blog">
+      <meta itemprop="name" content="Try Again">
     </span>
 
     
@@ -401,7 +401,7 @@
       
         <h2 id="依赖："><a href="#依赖：" class="headerlink" title="依赖："></a>依赖：</h2><h4 id="只需导入Springboot"><a href="#只需导入Springboot" class="headerlink" title="只需导入Springboot"></a>只需导入Springboot</h4><h2 id="操作过程："><a href="#操作过程：" class="headerlink" title="操作过程："></a>操作过程：</h2><h4 id="1-SpringBoot启动类类上添加-EnableScheduling注解，开启定时任务"><a href="#1-SpringBoot启动类类上添加-EnableScheduling注解，开启定时任务" class="headerlink" title="1. SpringBoot启动类类上添加@EnableScheduling注解，开启定时任务"></a>1. SpringBoot启动类类上添加@EnableScheduling注解，开启定时任务</h4><a id="more"></a>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@EnableScheduling</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(DemoApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="2-在方法上加上-Scheduled，以及括号内cron表达式，注意一定一定不用忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行"><a href="#2-在方法上加上-Scheduled，以及括号内cron表达式，注意一定一定不用忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行" class="headerlink" title="2.在方法上加上@Scheduled，以及括号内cron表达式，注意一定一定不用忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行"></a>2.在方法上加上@Scheduled，以及括号内cron表达式，注意一定一定不用忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Scheduled</span>(cron = <span class="string">"0 41 11 * * ?"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        SimpleDateFormat df = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd HH:mm:ss"</span>);</span><br><span class="line">        System.out.println(<span class="string">"当前时间："</span> + df.format(<span class="keyword">new</span> Date()));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-在方法上加上-Scheduled，以及括号内cron表达式，注意一定一定不要忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行"><a href="#2-在方法上加上-Scheduled，以及括号内cron表达式，注意一定一定不要忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行" class="headerlink" title="2.在方法上加上@Scheduled，以及括号内cron表达式，注意一定一定不要忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行"></a>2.在方法上加上@Scheduled，以及括号内cron表达式，注意一定一定不要忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Scheduled</span>(cron = <span class="string">"0 41 11 * * ?"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        SimpleDateFormat df = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd HH:mm:ss"</span>);</span><br><span class="line">        System.out.println(<span class="string">"当前时间："</span> + df.format(<span class="keyword">new</span> Date()));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="效果图："><a href="#效果图：" class="headerlink" title="效果图："></a>效果图：</h2><p><img src="/images/Java/3.png" alt="Yoyou"></p>
 <h2 id="扩展："><a href="#扩展：" class="headerlink" title="扩展："></a>扩展：</h2><h4 id="Scheduled注解的参数有两种形式："><a href="#Scheduled注解的参数有两种形式：" class="headerlink" title="@Scheduled注解的参数有两种形式："></a>@Scheduled注解的参数有两种形式：</h4><h4 id="1-initialDelay-程序启动后几毫秒后执行-、fixedRate-上一次开始执行后几秒开始执行-、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行"><a href="#1-initialDelay-程序启动后几毫秒后执行-、fixedRate-上一次开始执行后几秒开始执行-、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行" class="headerlink" title="1.initialDelay(程序启动后几毫秒后执行)、fixedRate(上一次开始执行后几秒开始执行)、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行"></a>1.initialDelay(程序启动后几毫秒后执行)、fixedRate(上一次开始执行后几秒开始执行)、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Scheduled</span>(initialDelay = <span class="number">1000</span>, fixedDelay = <span class="number">100</span>*<span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
@@ -425,14 +425,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/yy.jpg" alt="Zheng Yoyou 微信支付"/>
+        <img id="wechat_qr" src="/images/yy.jpg" alt="Culaccino 微信支付"/>
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/yy.jpg" alt="Zheng Yoyou 支付宝"/>
+        <img id="alipay_qr" src="/images/yy.jpg" alt="Culaccino 支付宝"/>
         <p>支付宝</p>
       </div>
     
@@ -548,10 +548,10 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/yy.jpg"
-                alt="Zheng Yoyou" />
+                alt="Culaccino" />
             
-              <p class="site-author-name" itemprop="name">Zheng Yoyou</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-author-name" itemprop="name">Culaccino</p>
+              <p class="site-description motion-element" itemprop="description">一个装了冷饮的玻璃杯在桌子上留下了圆形的水印</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -561,7 +561,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">23</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -624,11 +624,11 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://zhengyue12.github.io" title="Yoyou" target="_blank">Yoyou</a>
+                    <a href="https://zhengyue12.github.io" title="Culaccino" target="_blank">Culaccino</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://1001001.top" title="电子的林中小黑屋" target="_blank">电子的林中小黑屋</a>
+                    <a href="http://1001001.top" title="RE-Empire" target="_blank">RE-Empire</a>
                   </li>
                 
               </ul>
@@ -650,7 +650,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖："><span class="nav-number">1.</span> <span class="nav-text">依赖：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#只需导入Springboot"><span class="nav-number">1.0.1.</span> <span class="nav-text">只需导入Springboot</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作过程："><span class="nav-number">2.</span> <span class="nav-text">操作过程：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-SpringBoot启动类类上添加-EnableScheduling注解，开启定时任务"><span class="nav-number">2.0.1.</span> <span class="nav-text">1. SpringBoot启动类类上添加@EnableScheduling注解，开启定时任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-在方法上加上-Scheduled，以及括号内cron表达式，注意一定一定不用忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.在方法上加上@Scheduled，以及括号内cron表达式，注意一定一定不用忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果图："><span class="nav-number">3.</span> <span class="nav-text">效果图：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展："><span class="nav-number">4.</span> <span class="nav-text">扩展：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Scheduled注解的参数有两种形式："><span class="nav-number">4.0.1.</span> <span class="nav-text">@Scheduled注解的参数有两种形式：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-initialDelay-程序启动后几毫秒后执行-、fixedRate-上一次开始执行后几秒开始执行-、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行"><span class="nav-number">4.0.2.</span> <span class="nav-text">1.initialDelay(程序启动后几毫秒后执行)、fixedRate(上一次开始执行后几秒开始执行)、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-cron表达式："><span class="nav-number">4.0.3.</span> <span class="nav-text">2.cron表达式：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#【秒-分-时-日-月-周】"><span class="nav-number">4.0.3.1.</span> <span class="nav-text">【秒 分 时 日 月 周】</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#【0-0-0-？】-每天0点整"><span class="nav-number">4.0.3.2.</span> <span class="nav-text">【0 0 0 * * ？】 每天0点整</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#【0-1-2-0-】-每天0点1、2分"><span class="nav-number">4.0.3.3.</span> <span class="nav-text">【0 1,2 0 * * ?】 每天0点1、2分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#【0-0-0-Mon-Fri】-每天0点整"><span class="nav-number">4.0.3.4.</span> <span class="nav-text">【0 0 0 * * Mon-Fri】 每天0点整</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖："><span class="nav-number">1.</span> <span class="nav-text">依赖：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#只需导入Springboot"><span class="nav-number">1.0.1.</span> <span class="nav-text">只需导入Springboot</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作过程："><span class="nav-number">2.</span> <span class="nav-text">操作过程：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-SpringBoot启动类类上添加-EnableScheduling注解，开启定时任务"><span class="nav-number">2.0.1.</span> <span class="nav-text">1. SpringBoot启动类类上添加@EnableScheduling注解，开启定时任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-在方法上加上-Scheduled，以及括号内cron表达式，注意一定一定不要忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.在方法上加上@Scheduled，以及括号内cron表达式，注意一定一定不要忘记将类加入到spring容器中，例如：以下代码所示将在执行每天的11：40分执行</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果图："><span class="nav-number">3.</span> <span class="nav-text">效果图：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展："><span class="nav-number">4.</span> <span class="nav-text">扩展：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Scheduled注解的参数有两种形式："><span class="nav-number">4.0.1.</span> <span class="nav-text">@Scheduled注解的参数有两种形式：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-initialDelay-程序启动后几毫秒后执行-、fixedRate-上一次开始执行后几秒开始执行-、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行"><span class="nav-number">4.0.2.</span> <span class="nav-text">1.initialDelay(程序启动后几毫秒后执行)、fixedRate(上一次开始执行后几秒开始执行)、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-cron表达式："><span class="nav-number">4.0.3.</span> <span class="nav-text">2.cron表达式：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#【秒-分-时-日-月-周】"><span class="nav-number">4.0.3.1.</span> <span class="nav-text">【秒 分 时 日 月 周】</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#【0-0-0-？】-每天0点整"><span class="nav-number">4.0.3.2.</span> <span class="nav-text">【0 0 0 * * ？】 每天0点整</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#【0-1-2-0-】-每天0点1、2分"><span class="nav-number">4.0.3.3.</span> <span class="nav-text">【0 1,2 0 * * ?】 每天0点1、2分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#【0-0-0-Mon-Fri】-每天0点整"><span class="nav-number">4.0.3.4.</span> <span class="nav-text">【0 0 0 * * Mon-Fri】 每天0点整</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -674,7 +674,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Zheng Yoyou</span>
+  <span class="author" itemprop="copyrightHolder">Culaccino</span>
 
   
 </div>
