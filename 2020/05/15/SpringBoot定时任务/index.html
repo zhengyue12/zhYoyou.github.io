@@ -95,7 +95,7 @@
 <meta property="og:description" content="依赖：只需导入Springboot操作过程：1. SpringBoot启动类类上添加@EnableScheduling注解，开启定时任务">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;images&#x2F;Java&#x2F;3.png">
-<meta property="og:updated_time" content="2020-05-16T11:51:32.382Z">
+<meta property="og:updated_time" content="2020-05-17T06:51:45.597Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;images&#x2F;Java&#x2F;3.png">
 
@@ -405,7 +405,7 @@
 
 <h2 id="效果图："><a href="#效果图：" class="headerlink" title="效果图："></a>效果图：</h2><p><img src="/images/Java/3.png" alt="Yoyou"></p>
 <h2 id="扩展："><a href="#扩展：" class="headerlink" title="扩展："></a>扩展：</h2><h4 id="Scheduled注解的参数有两种形式："><a href="#Scheduled注解的参数有两种形式：" class="headerlink" title="@Scheduled注解的参数有两种形式："></a>@Scheduled注解的参数有两种形式：</h4><h4 id="1-initialDelay-程序启动后几毫秒后执行-、fixedRate-上一次开始执行后几秒开始执行-、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行"><a href="#1-initialDelay-程序启动后几毫秒后执行-、fixedRate-上一次开始执行后几秒开始执行-、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行" class="headerlink" title="1.initialDelay(程序启动后几毫秒后执行)、fixedRate(上一次开始执行后几秒开始执行)、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行"></a>1.initialDelay(程序启动后几毫秒后执行)、fixedRate(上一次开始执行后几秒开始执行)、fixedDelay（上一次执行完成后几秒开始执行）。例如：以下代码所示为启动后1秒执行，方法执行完成后间隔100秒继续执行</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Scheduled</span>(initialDelay = <span class="number">1000</span>, fixedDelay = <span class="number">100</span>*<span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="2-cron表达式："><a href="#2-cron表达式：" class="headerlink" title="2.cron表达式："></a>2.cron表达式：</h4><h5 id="【秒-分-时-日-月-周】"><a href="#【秒-分-时-日-月-周】" class="headerlink" title="【秒 分 时 日 月 周】"></a>【秒 分 时 日 月 周】</h5><h5 id="【0-0-0-？】-每天0点整"><a href="#【0-0-0-？】-每天0点整" class="headerlink" title="【0 0 0 * * ？】 每天0点整"></a>【0 0 0 * * ？】 每天0点整</h5><h5 id="【0-1-2-0-】-每天0点1、2分"><a href="#【0-1-2-0-】-每天0点1、2分" class="headerlink" title="【0 1,2 0 * * ?】 每天0点1、2分"></a>【0 1,2 0 * * ?】 每天0点1、2分</h5><h5 id="【0-0-0-Mon-Fri】-每天0点整"><a href="#【0-0-0-Mon-Fri】-每天0点整" class="headerlink" title="【0 0 0 * * Mon-Fri】 每天0点整"></a>【0 0 0 * * Mon-Fri】 每天0点整</h5>
+<h4 id="2-cron表达式："><a href="#2-cron表达式：" class="headerlink" title="2.cron表达式："></a>2.cron表达式：</h4><h5 id="【秒-分-时-日-月-周】"><a href="#【秒-分-时-日-月-周】" class="headerlink" title="【秒 分 时 日 月 周】"></a>【秒 分 时 日 月 周】</h5><h5 id="【0-0-0-？】-每天0点整"><a href="#【0-0-0-？】-每天0点整" class="headerlink" title="【0 0 0 * * ？】 每天0点整"></a>【0 0 0 * * ？】 每天0点整</h5><h5 id="【0-1-2-0-】-每天0点1、2分"><a href="#【0-1-2-0-】-每天0点1、2分" class="headerlink" title="【0 1,2 0 * * ?】 每天0点1、2分"></a>【0 1,2 0 * * ?】 每天0点1、2分</h5><h5 id="【0-0-0-Mon-Fri】-每天0点整"><a href="#【0-0-0-Mon-Fri】-每天0点整" class="headerlink" title="【0 0 0 * * Mon-Fri】 每天0点整"></a>【0 0 0 * * Mon-Fri】 每天0点整</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Scheduled</span>(cron = <span class="string">"0 41 11 * * ?"</span>)</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -478,8 +478,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/05/15/SpringBoot-Webmagic-MySQL-Redis%E5%AE%9A%E6%97%B6%E7%88%AC%E5%8F%96%E6%95%B0%E6%8D%AE/" rel="prev" title="SpringBoot+Webmagic+MySQL+Redis定时爬取数据">
-                SpringBoot+Webmagic+MySQL+Redis定时爬取数据 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/05/16/Docker%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%EF%BC%88%E4%BA%8C%EF%BC%89/" rel="prev" title="Docker基本命令（二）">
+                Docker基本命令（二） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -561,7 +561,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -572,7 +572,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -583,7 +583,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -625,6 +625,10 @@
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://zhengyue12.github.io" title="Culaccino" target="_blank">Culaccino</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://info52.top" title="山有木兮" target="_blank">山有木兮</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
