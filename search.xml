@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>geateway启动报错 org.springframework.http.codec.ServerCodecConfigurer that could not be found</title>
+    <url>/2020/06/03/geateway%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99-org-springframework-http-codec-ServerCodecConfigurer-that-could-not-be-found/</url>
+    <content><![CDATA[<h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><h4 id="gateway启动时报错：Parameter-0-of-method-modifyResponseBodyGatewayFilterFactory-in-org-springframework-cloud-gateway-config-GatewayAutoConfiguration-required-a-bean-of-type-‘org-springframework-http-codec-ServerCodecConfigurer’-that-could-not-be-found"><a href="#gateway启动时报错：Parameter-0-of-method-modifyResponseBodyGatewayFilterFactory-in-org-springframework-cloud-gateway-config-GatewayAutoConfiguration-required-a-bean-of-type-‘org-springframework-http-codec-ServerCodecConfigurer’-that-could-not-be-found" class="headerlink" title="gateway启动时报错：Parameter 0 of method modifyResponseBodyGatewayFilterFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type ‘org.springframework.http.codec.ServerCodecConfigurer’ that could not be found."></a>gateway启动时报错：Parameter 0 of method modifyResponseBodyGatewayFilterFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type ‘org.springframework.http.codec.ServerCodecConfigurer’ that could not be found.</h4><a id="more"></a>
+<h2 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h2><h4 id="因为gateway的底层是webflux，和springboot的web依赖只能存在一个"><a href="#因为gateway的底层是webflux，和springboot的web依赖只能存在一个" class="headerlink" title="因为gateway的底层是webflux，和springboot的web依赖只能存在一个"></a>因为gateway的底层是webflux，和springboot的web依赖只能存在一个</h4><h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><h4 id="删除springboot-web模块的依赖"><a href="#删除springboot-web模块的依赖" class="headerlink" title="删除springboot web模块的依赖"></a>删除springboot web模块的依赖</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--        &lt;dependency&gt;--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        &lt;/dependency&gt;--&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>SpringCloud</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>SpringCloud</tag>
+        <tag>微服务</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SpringBoot+Webmagic+Redis+Docker定时爬取数据</title>
     <url>/2020/05/18/SpringBoot-Webmagic-Redis%E5%AE%9A%E6%97%B6%E7%88%AC%E5%8F%96%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<h2 id="项目说明："><a href="#项目说明：" class="headerlink" title="项目说明："></a>项目说明：</h2><h4 id="emsp-emsp-本demo主要是基于springboot基础框架，在指定时间优先判断是否已存在指定Key值的数据，存在则删除，再通过webmagic技术爬取官网上的新闻数据，通过Redis的set（集合）数据类型进行去重处理存入Redis中。最后打包成镜像发布至Docker；"><a href="#emsp-emsp-本demo主要是基于springboot基础框架，在指定时间优先判断是否已存在指定Key值的数据，存在则删除，再通过webmagic技术爬取官网上的新闻数据，通过Redis的set（集合）数据类型进行去重处理存入Redis中。最后打包成镜像发布至Docker；" class="headerlink" title="&emsp; &emsp;本demo主要是基于springboot基础框架，在指定时间优先判断是否已存在指定Key值的数据，存在则删除，再通过webmagic技术爬取官网上的新闻数据，通过Redis的set（集合）数据类型进行去重处理存入Redis中。最后打包成镜像发布至Docker；"></a>&emsp; &emsp;本demo主要是基于springboot基础框架，在指定时间优先判断是否已存在指定Key值的数据，存在则删除，再通过webmagic技术爬取官网上的新闻数据，通过Redis的set（集合）数据类型进行去重处理存入Redis中。最后打包成镜像发布至Docker；</h4><h2 id="技术栈："><a href="#技术栈：" class="headerlink" title="技术栈："></a>技术栈：</h2><table>
@@ -60,10 +76,10 @@
         <category>SpringBoot</category>
       </categories>
       <tags>
+        <tag>Docker</tag>
         <tag>Java</tag>
         <tag>SpringBoot</tag>
         <tag>Webmagic</tag>
-        <tag>爬虫 - Docker</tag>
         <tag>Redis</tag>
       </tags>
   </entry>
