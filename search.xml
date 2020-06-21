@@ -3,41 +3,41 @@
   <entry>
     <title>DockFile体系结构以及案例演示</title>
     <url>/2020/06/18/DockFile%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h2 id="保留字指令及含义："><a href="#保留字指令及含义：" class="headerlink" title="保留字指令及含义："></a>保留字指令及含义：</h2><h4 id="FROM"><a href="#FROM" class="headerlink" title="FROM"></a>FROM</h4><blockquote>
+    <content><![CDATA[<h2 id="保留字指令及含义："><a href="#保留字指令及含义：" class="headerlink" title="保留字指令及含义："></a>保留字指令及含义：</h2><h4 id="emsp-emsp-FROM"><a href="#emsp-emsp-FROM" class="headerlink" title="&emsp;&emsp;FROM"></a>&emsp;&emsp;FROM</h4><blockquote>
 <p>基础镜像，当前新镜像是基于哪个镜像的</p>
 </blockquote>
-<h4 id="MAINTAINER"><a href="#MAINTAINER" class="headerlink" title="MAINTAINER"></a>MAINTAINER</h4><blockquote>
+<h4 id="emsp-emsp-MAINTAINER"><a href="#emsp-emsp-MAINTAINER" class="headerlink" title="&emsp;&emsp;MAINTAINER"></a>&emsp;&emsp;MAINTAINER</h4><blockquote>
 <p>镜像维护者的姓名和邮箱地址</p>
 </blockquote>
-<h4 id="RUN"><a href="#RUN" class="headerlink" title="RUN"></a>RUN</h4><blockquote>
+<h4 id="emsp-emsp-RUN"><a href="#emsp-emsp-RUN" class="headerlink" title="&emsp;&emsp;RUN"></a>&emsp;&emsp;RUN</h4><blockquote>
 <p>容器构建时需要运行的命令</p>
 </blockquote>
 <a id="more"></a>
-<h4 id="EXPOSE"><a href="#EXPOSE" class="headerlink" title="EXPOSE"></a>EXPOSE</h4><blockquote>
+<h4 id="emsp-emsp-EXPOSE"><a href="#emsp-emsp-EXPOSE" class="headerlink" title="&emsp;&emsp;EXPOSE"></a>&emsp;&emsp;EXPOSE</h4><blockquote>
 <p>容器对外暴露的端口号</p>
 </blockquote>
-<h4 id="WORKDIR"><a href="#WORKDIR" class="headerlink" title="WORKDIR"></a>WORKDIR</h4><blockquote>
+<h4 id="emsp-emsp-WORKDIR"><a href="#emsp-emsp-WORKDIR" class="headerlink" title="&emsp;&emsp;WORKDIR"></a>&emsp;&emsp;WORKDIR</h4><blockquote>
 <p>指定在创建容器后，终端默认登录进来的工作目录（未指定默认根目录）</p>
 </blockquote>
-<h4 id="ENV"><a href="#ENV" class="headerlink" title="ENV"></a>ENV</h4><blockquote>
+<h4 id="emsp-emsp-ENV"><a href="#emsp-emsp-ENV" class="headerlink" title="&emsp;&emsp;ENV"></a>&emsp;&emsp;ENV</h4><blockquote>
 <p>用来在构建镜像过程中设置环境变量</p>
 </blockquote>
-<h4 id="ADD"><a href="#ADD" class="headerlink" title="ADD"></a>ADD</h4><blockquote>
+<h4 id="emsp-emsp-ADD"><a href="#emsp-emsp-ADD" class="headerlink" title="&emsp;&emsp;ADD"></a>&emsp;&emsp;ADD</h4><blockquote>
 <p>将宿主机目录下的文件拷贝进镜像且ADD命令会自动处理URL和解压tar压缩包</p>
 </blockquote>
-<h4 id="COPY"><a href="#COPY" class="headerlink" title="COPY"></a>COPY</h4><blockquote>
+<h4 id="emsp-emsp-COPY"><a href="#emsp-emsp-COPY" class="headerlink" title="&emsp;&emsp;COPY"></a>&emsp;&emsp;COPY</h4><blockquote>
 <p>类似ADD，拷贝文件和目录到镜像中<br>将从构建上下文目录中&lt;源路径&gt;的文件/目录复制到新的一层的镜像内的&lt;目标路径&gt;位置</p>
 </blockquote>
-<h4 id="VOLUME"><a href="#VOLUME" class="headerlink" title="VOLUME"></a>VOLUME</h4><blockquote>
+<h4 id="emsp-emsp-VOLUME"><a href="#emsp-emsp-VOLUME" class="headerlink" title="&emsp;&emsp;VOLUME"></a>&emsp;&emsp;VOLUME</h4><blockquote>
 <p>容器数据卷，用于保存和持久化工作</p>
 </blockquote>
-<h4 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a>CMD</h4><blockquote>
+<h4 id="emsp-emsp-CMD"><a href="#emsp-emsp-CMD" class="headerlink" title="&emsp;&emsp;CMD"></a>&emsp;&emsp;CMD</h4><blockquote>
 <p>指定一个容器启动时要运行的命令<br>DockerFile中可以有多个CMD指令，但只有最后一个生效，CMD会被docker run之后的参数替换</p>
 </blockquote>
-<h4 id="ENTRYPOINT"><a href="#ENTRYPOINT" class="headerlink" title="ENTRYPOINT"></a>ENTRYPOINT</h4><blockquote>
+<h4 id="emsp-emsp-ENTRYPOINT"><a href="#emsp-emsp-ENTRYPOINT" class="headerlink" title="&emsp;&emsp;ENTRYPOINT"></a>&emsp;&emsp;ENTRYPOINT</h4><blockquote>
 <p>指定一个容器启动时要启动的命令<br>ENTERPOINT的目的和CMD一样，都是在指定容器启动程序及参数</p>
 </blockquote>
-<h4 id="ONBUILD"><a href="#ONBUILD" class="headerlink" title="ONBUILD"></a>ONBUILD</h4><blockquote>
+<h4 id="emsp-emsp-ONBUILD"><a href="#emsp-emsp-ONBUILD" class="headerlink" title="&emsp;&emsp;ONBUILD"></a>&emsp;&emsp;ONBUILD</h4><blockquote>
 <p>当构建一个被继承的Dockerfile时运行命令，父镜像在被子继承后父镜像的onbuild被触发</p>
 </blockquote>
 <h2 id="案例一："><a href="#案例一：" class="headerlink" title="案例一："></a>案例一：</h2><h4 id="centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools"><a href="#centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools" class="headerlink" title="centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools"></a>centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools</h4><figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"><span class="keyword">FROM</span> centos</span><br><span class="line"><span class="keyword">ENV</span> myPath /tmp</span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> <span class="variable">$myPath</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yum install -y vim</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yum install -y net-tools</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">80</span></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> /bin/bash</span></span><br></pre></td></tr></table></figure>
@@ -55,7 +55,7 @@
   <entry>
     <title>杂记(一)</title>
     <url>/2020/06/12/%E6%9D%82%E8%AE%B0-%E4%B8%80/</url>
-    <content><![CDATA[<h4 id=""><a href="#" class="headerlink" title=""></a><!-- 不知从何时开始，每日每日回到寝室就感到疲累，却又感觉不到有所得。突然感觉自己失掉了方向，毫无计划，每天学的累死却又毫无效率。甚至怀疑自己的努力是否真的有用。偶然的机会和一个即将毕业回来专升本的学长唠嗑，提到了近期的状态，他跟我说，想要什么就往什么方向努力。是该重新审视一下自己了，路都是自己走出来的，加油！ --></h4>]]></content>
+    <content><![CDATA[<h4 id=""><a href="#" class="headerlink" title=""></a><!-- 不知从何时开始，每日每日回到寝室就感到疲累，却又感觉不到有所得。突然感觉自己失掉了方向，毫无计划，每天学的累死却又毫无效率。甚至怀疑自己的努力是否真的有用。偶然的机会和一个即将毕业回来专升本的学长唠嗑，提到了近期的状态，他跟我说，想要什么就往什么方向努力，是该重新审视一下自己了。罢了，趁自己还年轻，路还可以慢慢走，加油！ --></h4><h4 id="想记录一下近期的状态，却又不知从何说起。罢了，路在自己脚下，加油！！"><a href="#想记录一下近期的状态，却又不知从何说起。罢了，路在自己脚下，加油！！" class="headerlink" title="想记录一下近期的状态，却又不知从何说起。罢了，路在自己脚下，加油！！"></a>想记录一下近期的状态，却又不知从何说起。罢了，路在自己脚下，加油！！</h4>]]></content>
       <categories>
         <category>杂记</category>
         <category>随便写写</category>

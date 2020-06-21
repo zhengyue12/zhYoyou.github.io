@@ -86,15 +86,15 @@
 
 
 
-<meta name="description" content="保留字指令及含义：FROM 基础镜像，当前新镜像是基于哪个镜像的  MAINTAINER 镜像维护者的姓名和邮箱地址  RUN 容器构建时需要运行的命令">
+<meta name="description" content="保留字指令及含义：&amp;emsp;&amp;emsp;FROM 基础镜像，当前新镜像是基于哪个镜像的  &amp;emsp;&amp;emsp;MAINTAINER 镜像维护者的姓名和邮箱地址  &amp;emsp;&amp;emsp;RUN 容器构建时需要运行的命令">
 <meta name="keywords" content="运维,Docker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DockFile体系结构以及案例演示">
 <meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;2020&#x2F;06&#x2F;18&#x2F;DockFile%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84&#x2F;index.html">
 <meta property="og:site_name" content="Try Again">
-<meta property="og:description" content="保留字指令及含义：FROM 基础镜像，当前新镜像是基于哪个镜像的  MAINTAINER 镜像维护者的姓名和邮箱地址  RUN 容器构建时需要运行的命令">
+<meta property="og:description" content="保留字指令及含义：&amp;emsp;&amp;emsp;FROM 基础镜像，当前新镜像是基于哪个镜像的  &amp;emsp;&amp;emsp;MAINTAINER 镜像维护者的姓名和邮箱地址  &amp;emsp;&amp;emsp;RUN 容器构建时需要运行的命令">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-06-21T15:13:55.989Z">
+<meta property="og:updated_time" content="2020-06-21T15:18:19.067Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -397,41 +397,41 @@
       
 
       
-        <h2 id="保留字指令及含义："><a href="#保留字指令及含义：" class="headerlink" title="保留字指令及含义："></a>保留字指令及含义：</h2><h4 id="FROM"><a href="#FROM" class="headerlink" title="FROM"></a>FROM</h4><blockquote>
+        <h2 id="保留字指令及含义："><a href="#保留字指令及含义：" class="headerlink" title="保留字指令及含义："></a>保留字指令及含义：</h2><h4 id="emsp-emsp-FROM"><a href="#emsp-emsp-FROM" class="headerlink" title="&emsp;&emsp;FROM"></a>&emsp;&emsp;FROM</h4><blockquote>
 <p>基础镜像，当前新镜像是基于哪个镜像的</p>
 </blockquote>
-<h4 id="MAINTAINER"><a href="#MAINTAINER" class="headerlink" title="MAINTAINER"></a>MAINTAINER</h4><blockquote>
+<h4 id="emsp-emsp-MAINTAINER"><a href="#emsp-emsp-MAINTAINER" class="headerlink" title="&emsp;&emsp;MAINTAINER"></a>&emsp;&emsp;MAINTAINER</h4><blockquote>
 <p>镜像维护者的姓名和邮箱地址</p>
 </blockquote>
-<h4 id="RUN"><a href="#RUN" class="headerlink" title="RUN"></a>RUN</h4><blockquote>
+<h4 id="emsp-emsp-RUN"><a href="#emsp-emsp-RUN" class="headerlink" title="&emsp;&emsp;RUN"></a>&emsp;&emsp;RUN</h4><blockquote>
 <p>容器构建时需要运行的命令</p>
 </blockquote>
 <a id="more"></a>
-<h4 id="EXPOSE"><a href="#EXPOSE" class="headerlink" title="EXPOSE"></a>EXPOSE</h4><blockquote>
+<h4 id="emsp-emsp-EXPOSE"><a href="#emsp-emsp-EXPOSE" class="headerlink" title="&emsp;&emsp;EXPOSE"></a>&emsp;&emsp;EXPOSE</h4><blockquote>
 <p>容器对外暴露的端口号</p>
 </blockquote>
-<h4 id="WORKDIR"><a href="#WORKDIR" class="headerlink" title="WORKDIR"></a>WORKDIR</h4><blockquote>
+<h4 id="emsp-emsp-WORKDIR"><a href="#emsp-emsp-WORKDIR" class="headerlink" title="&emsp;&emsp;WORKDIR"></a>&emsp;&emsp;WORKDIR</h4><blockquote>
 <p>指定在创建容器后，终端默认登录进来的工作目录（未指定默认根目录）</p>
 </blockquote>
-<h4 id="ENV"><a href="#ENV" class="headerlink" title="ENV"></a>ENV</h4><blockquote>
+<h4 id="emsp-emsp-ENV"><a href="#emsp-emsp-ENV" class="headerlink" title="&emsp;&emsp;ENV"></a>&emsp;&emsp;ENV</h4><blockquote>
 <p>用来在构建镜像过程中设置环境变量</p>
 </blockquote>
-<h4 id="ADD"><a href="#ADD" class="headerlink" title="ADD"></a>ADD</h4><blockquote>
+<h4 id="emsp-emsp-ADD"><a href="#emsp-emsp-ADD" class="headerlink" title="&emsp;&emsp;ADD"></a>&emsp;&emsp;ADD</h4><blockquote>
 <p>将宿主机目录下的文件拷贝进镜像且ADD命令会自动处理URL和解压tar压缩包</p>
 </blockquote>
-<h4 id="COPY"><a href="#COPY" class="headerlink" title="COPY"></a>COPY</h4><blockquote>
+<h4 id="emsp-emsp-COPY"><a href="#emsp-emsp-COPY" class="headerlink" title="&emsp;&emsp;COPY"></a>&emsp;&emsp;COPY</h4><blockquote>
 <p>类似ADD，拷贝文件和目录到镜像中<br>将从构建上下文目录中&lt;源路径&gt;的文件/目录复制到新的一层的镜像内的&lt;目标路径&gt;位置</p>
 </blockquote>
-<h4 id="VOLUME"><a href="#VOLUME" class="headerlink" title="VOLUME"></a>VOLUME</h4><blockquote>
+<h4 id="emsp-emsp-VOLUME"><a href="#emsp-emsp-VOLUME" class="headerlink" title="&emsp;&emsp;VOLUME"></a>&emsp;&emsp;VOLUME</h4><blockquote>
 <p>容器数据卷，用于保存和持久化工作</p>
 </blockquote>
-<h4 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a>CMD</h4><blockquote>
+<h4 id="emsp-emsp-CMD"><a href="#emsp-emsp-CMD" class="headerlink" title="&emsp;&emsp;CMD"></a>&emsp;&emsp;CMD</h4><blockquote>
 <p>指定一个容器启动时要运行的命令<br>DockerFile中可以有多个CMD指令，但只有最后一个生效，CMD会被docker run之后的参数替换</p>
 </blockquote>
-<h4 id="ENTRYPOINT"><a href="#ENTRYPOINT" class="headerlink" title="ENTRYPOINT"></a>ENTRYPOINT</h4><blockquote>
+<h4 id="emsp-emsp-ENTRYPOINT"><a href="#emsp-emsp-ENTRYPOINT" class="headerlink" title="&emsp;&emsp;ENTRYPOINT"></a>&emsp;&emsp;ENTRYPOINT</h4><blockquote>
 <p>指定一个容器启动时要启动的命令<br>ENTERPOINT的目的和CMD一样，都是在指定容器启动程序及参数</p>
 </blockquote>
-<h4 id="ONBUILD"><a href="#ONBUILD" class="headerlink" title="ONBUILD"></a>ONBUILD</h4><blockquote>
+<h4 id="emsp-emsp-ONBUILD"><a href="#emsp-emsp-ONBUILD" class="headerlink" title="&emsp;&emsp;ONBUILD"></a>&emsp;&emsp;ONBUILD</h4><blockquote>
 <p>当构建一个被继承的Dockerfile时运行命令，父镜像在被子继承后父镜像的onbuild被触发</p>
 </blockquote>
 <h2 id="案例一："><a href="#案例一：" class="headerlink" title="案例一："></a>案例一：</h2><h4 id="centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools"><a href="#centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools" class="headerlink" title="centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools"></a>centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools</h4><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> centos</span><br><span class="line"><span class="keyword">ENV</span> myPath /tmp</span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> <span class="variable">$myPath</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yum install -y vim</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yum install -y net-tools</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">80</span></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> /bin/bash</span></span><br></pre></td></tr></table></figure>
@@ -675,7 +675,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#保留字指令及含义："><span class="nav-number">1.</span> <span class="nav-text">保留字指令及含义：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#FROM"><span class="nav-number">1.0.1.</span> <span class="nav-text">FROM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MAINTAINER"><span class="nav-number">1.0.2.</span> <span class="nav-text">MAINTAINER</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RUN"><span class="nav-number">1.0.3.</span> <span class="nav-text">RUN</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#EXPOSE"><span class="nav-number">1.0.4.</span> <span class="nav-text">EXPOSE</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#WORKDIR"><span class="nav-number">1.0.5.</span> <span class="nav-text">WORKDIR</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ENV"><span class="nav-number">1.0.6.</span> <span class="nav-text">ENV</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ADD"><span class="nav-number">1.0.7.</span> <span class="nav-text">ADD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#COPY"><span class="nav-number">1.0.8.</span> <span class="nav-text">COPY</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#VOLUME"><span class="nav-number">1.0.9.</span> <span class="nav-text">VOLUME</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CMD"><span class="nav-number">1.0.10.</span> <span class="nav-text">CMD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ENTRYPOINT"><span class="nav-number">1.0.11.</span> <span class="nav-text">ENTRYPOINT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ONBUILD"><span class="nav-number">1.0.12.</span> <span class="nav-text">ONBUILD</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#案例一："><span class="nav-number">2.</span> <span class="nav-text">案例一：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools"><span class="nav-number">2.0.1.</span> <span class="nav-text">centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#保留字指令及含义："><span class="nav-number">1.</span> <span class="nav-text">保留字指令及含义：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-FROM"><span class="nav-number">1.0.1.</span> <span class="nav-text">  FROM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-MAINTAINER"><span class="nav-number">1.0.2.</span> <span class="nav-text">  MAINTAINER</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-RUN"><span class="nav-number">1.0.3.</span> <span class="nav-text">  RUN</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-EXPOSE"><span class="nav-number">1.0.4.</span> <span class="nav-text">  EXPOSE</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-WORKDIR"><span class="nav-number">1.0.5.</span> <span class="nav-text">  WORKDIR</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-ENV"><span class="nav-number">1.0.6.</span> <span class="nav-text">  ENV</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-ADD"><span class="nav-number">1.0.7.</span> <span class="nav-text">  ADD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-COPY"><span class="nav-number">1.0.8.</span> <span class="nav-text">  COPY</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-VOLUME"><span class="nav-number">1.0.9.</span> <span class="nav-text">  VOLUME</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-CMD"><span class="nav-number">1.0.10.</span> <span class="nav-text">  CMD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-ENTRYPOINT"><span class="nav-number">1.0.11.</span> <span class="nav-text">  ENTRYPOINT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#emsp-emsp-ONBUILD"><span class="nav-number">1.0.12.</span> <span class="nav-text">  ONBUILD</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#案例一："><span class="nav-number">2.</span> <span class="nav-text">案例一：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools"><span class="nav-number">2.0.1.</span> <span class="nav-text">centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
