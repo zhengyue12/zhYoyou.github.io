@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="运维,Docker," />
 
 
 
@@ -86,13 +86,15 @@
 
 
 
-<meta name="description" content="一个装了冷饮的玻璃杯在桌子上留下了圆形的水印">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Try Again">
-<meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;categories&#x2F;%E8%BF%90%E7%BB%B4&#x2F;Nginx&#x2F;index.html">
+<meta name="description" content="保留字指令及含义： FROM  基础镜像，当前新镜像是基于哪个镜像的 MAINTAINER  镜像维护者的姓名和邮箱地址 RUN  容器构建时需要运行的命令 EXPOSE  容器对外暴露的端口号">
+<meta name="keywords" content="运维,Docker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DockFile体系结构以及案例演示">
+<meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;2020&#x2F;06&#x2F;18&#x2F;DockFile%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84&#x2F;index.html">
 <meta property="og:site_name" content="Try Again">
-<meta property="og:description" content="一个装了冷饮的玻璃杯在桌子上留下了圆形的水印">
+<meta property="og:description" content="保留字指令及含义： FROM  基础镜像，当前新镜像是基于哪个镜像的 MAINTAINER  镜像维护者的姓名和邮箱地址 RUN  容器构建时需要运行的命令 EXPOSE  容器对外暴露的端口号">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-06-21T02:14:00.416Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -123,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="https://zhengyue12.github.io/categories/运维/Nginx/"/>
+  <link rel="canonical" href="https://zhengyue12.github.io/2020/06/18/DockFile体系结构/"/>
 
 
 
 
 
-  <title>分类: Nginx | Try Again</title>
+  <title>DockFile体系结构以及案例演示 | Try Again</title>
   
 
 
@@ -148,7 +150,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -276,55 +278,254 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Nginx<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/06/18/DockFile%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Culaccino">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/yy.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Try Again">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2020/06/08/nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%88%9D%E5%B0%9D%E8%AF%95/" itemprop="url">
-              
-                <span itemprop="name">nginx反向代理初尝试</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">DockFile体系结构以及案例演示</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-06-08T20:37:38+08:00"
-              content="2020-06-08" >
-          06-08
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-18T16:14:28+08:00">
+                2020-06-18
+              </time>
+            
 
-    </header>
-  </article>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BF%90%E7%BB%B4/" itemprop="url" rel="index">
+                    <span itemprop="name">运维</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BF%90%E7%BB%B4/Docker/" itemprop="url" rel="index">
+                    <span itemprop="name">Docker</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本页总阅读数<i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="保留字指令及含义："><a href="#保留字指令及含义：" class="headerlink" title="保留字指令及含义："></a>保留字指令及含义：</h2><blockquote>
+<p>FROM</p>
+</blockquote>
+<h4 id="基础镜像，当前新镜像是基于哪个镜像的"><a href="#基础镜像，当前新镜像是基于哪个镜像的" class="headerlink" title="基础镜像，当前新镜像是基于哪个镜像的"></a>基础镜像，当前新镜像是基于哪个镜像的</h4><blockquote>
+<p>MAINTAINER</p>
+</blockquote>
+<h4 id="镜像维护者的姓名和邮箱地址"><a href="#镜像维护者的姓名和邮箱地址" class="headerlink" title="镜像维护者的姓名和邮箱地址"></a>镜像维护者的姓名和邮箱地址</h4><blockquote>
+<p>RUN</p>
+</blockquote>
+<h4 id="容器构建时需要运行的命令"><a href="#容器构建时需要运行的命令" class="headerlink" title="容器构建时需要运行的命令"></a>容器构建时需要运行的命令</h4><blockquote>
+<p>EXPOSE</p>
+</blockquote>
+<h4 id="容器对外暴露的端口号"><a href="#容器对外暴露的端口号" class="headerlink" title="容器对外暴露的端口号"></a>容器对外暴露的端口号</h4><a id="more"></a>
+<blockquote>
+<p>WORKDIR</p>
+</blockquote>
+<h4 id="指定在创建容器后，终端默认登录进来的工作目录（未指定默认根目录）"><a href="#指定在创建容器后，终端默认登录进来的工作目录（未指定默认根目录）" class="headerlink" title="指定在创建容器后，终端默认登录进来的工作目录（未指定默认根目录）"></a>指定在创建容器后，终端默认登录进来的工作目录（未指定默认根目录）</h4><blockquote>
+<p>ENV</p>
+</blockquote>
+<h4 id="用来在构建镜像过程中设置环境变量"><a href="#用来在构建镜像过程中设置环境变量" class="headerlink" title="用来在构建镜像过程中设置环境变量"></a>用来在构建镜像过程中设置环境变量</h4><blockquote>
+<p>ADD</p>
+</blockquote>
+<h4 id="将宿主机目录下的文件拷贝进镜像且ADD命令会自动处理URL和解压tar压缩包"><a href="#将宿主机目录下的文件拷贝进镜像且ADD命令会自动处理URL和解压tar压缩包" class="headerlink" title="将宿主机目录下的文件拷贝进镜像且ADD命令会自动处理URL和解压tar压缩包"></a>将宿主机目录下的文件拷贝进镜像且ADD命令会自动处理URL和解压tar压缩包</h4><blockquote>
+<p>COPY</p>
+</blockquote>
+<h4 id="类似ADD，拷贝文件和目录到镜像中"><a href="#类似ADD，拷贝文件和目录到镜像中" class="headerlink" title="类似ADD，拷贝文件和目录到镜像中"></a>类似ADD，拷贝文件和目录到镜像中</h4><h4 id="将从构建上下文目录中-lt-源路径-gt-的文件-目录复制到新的一层的镜像内的-lt-目标路径-gt-位置"><a href="#将从构建上下文目录中-lt-源路径-gt-的文件-目录复制到新的一层的镜像内的-lt-目标路径-gt-位置" class="headerlink" title="将从构建上下文目录中&lt;源路径&gt;的文件/目录复制到新的一层的镜像内的&lt;目标路径&gt;位置"></a>将从构建上下文目录中&lt;源路径&gt;的文件/目录复制到新的一层的镜像内的&lt;目标路径&gt;位置</h4><blockquote>
+<p>VOLUME</p>
+</blockquote>
+<h4 id="容器数据卷，用于保存和持久化工作"><a href="#容器数据卷，用于保存和持久化工作" class="headerlink" title="容器数据卷，用于保存和持久化工作"></a>容器数据卷，用于保存和持久化工作</h4><blockquote>
+<p>CMD</p>
+</blockquote>
+<h4 id="指定一个容器启动时要运行的命令"><a href="#指定一个容器启动时要运行的命令" class="headerlink" title="指定一个容器启动时要运行的命令"></a>指定一个容器启动时要运行的命令</h4><h4 id="DockerFile中可以有多个CMD指令，但只有最后一个生效，CMD会被docker-run之后的参数替换"><a href="#DockerFile中可以有多个CMD指令，但只有最后一个生效，CMD会被docker-run之后的参数替换" class="headerlink" title="DockerFile中可以有多个CMD指令，但只有最后一个生效，CMD会被docker run之后的参数替换"></a>DockerFile中可以有多个CMD指令，但只有最后一个生效，CMD会被docker run之后的参数替换</h4><blockquote>
+<p>ENTRYPOINT</p>
+</blockquote>
+<h4 id="指定一个容器启动时要启动的命令"><a href="#指定一个容器启动时要启动的命令" class="headerlink" title="指定一个容器启动时要启动的命令"></a>指定一个容器启动时要启动的命令</h4><h4 id="ENTERPOINT的目的和CMD一样，都是在指定容器启动程序及参数"><a href="#ENTERPOINT的目的和CMD一样，都是在指定容器启动程序及参数" class="headerlink" title="ENTERPOINT的目的和CMD一样，都是在指定容器启动程序及参数"></a>ENTERPOINT的目的和CMD一样，都是在指定容器启动程序及参数</h4><blockquote>
+<p>ONBUILD</p>
+</blockquote>
+<h4 id="当构建一个被继承的Dockerfile时运行命令，父镜像在被子继承后父镜像的onbuild被触发"><a href="#当构建一个被继承的Dockerfile时运行命令，父镜像在被子继承后父镜像的onbuild被触发" class="headerlink" title="当构建一个被继承的Dockerfile时运行命令，父镜像在被子继承后父镜像的onbuild被触发"></a>当构建一个被继承的Dockerfile时运行命令，父镜像在被子继承后父镜像的onbuild被触发</h4><h2 id="案例一："><a href="#案例一：" class="headerlink" title="案例一："></a>案例一：</h2><h4 id="centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools"><a href="#centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools" class="headerlink" title="centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools"></a>centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools</h4><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> centos</span><br><span class="line"><span class="keyword">ENV</span> myPath /tmp</span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> <span class="variable">$myPath</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yum install -y vim</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yum install -y net-tools</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">80</span></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> /bin/bash</span></span><br></pre></td></tr></table></figure>
 
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果你觉得有帮助，慷慨如你，可以扫描下面的二维码赞赏一下</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/yy.jpg" alt="Culaccino 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/yy.jpg" alt="Culaccino 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E8%BF%90%E7%BB%B4/" rel="tag"># 运维</a>
+          
+            <a href="/tags/Docker/" rel="tag"># Docker</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/12/%E6%9D%82%E8%AE%B0-%E4%B8%80/" rel="next" title="杂记(一)">
+                <i class="fa fa-chevron-left"></i> 杂记(一)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -332,6 +533,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -352,8 +557,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -372,7 +586,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -383,7 +597,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -394,7 +608,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -451,6 +665,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#保留字指令及含义："><span class="nav-number">1.</span> <span class="nav-text">保留字指令及含义：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基础镜像，当前新镜像是基于哪个镜像的"><span class="nav-number">1.0.1.</span> <span class="nav-text">基础镜像，当前新镜像是基于哪个镜像的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#镜像维护者的姓名和邮箱地址"><span class="nav-number">1.0.2.</span> <span class="nav-text">镜像维护者的姓名和邮箱地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#容器构建时需要运行的命令"><span class="nav-number">1.0.3.</span> <span class="nav-text">容器构建时需要运行的命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#容器对外暴露的端口号"><span class="nav-number">1.0.4.</span> <span class="nav-text">容器对外暴露的端口号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指定在创建容器后，终端默认登录进来的工作目录（未指定默认根目录）"><span class="nav-number">1.0.5.</span> <span class="nav-text">指定在创建容器后，终端默认登录进来的工作目录（未指定默认根目录）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#用来在构建镜像过程中设置环境变量"><span class="nav-number">1.0.6.</span> <span class="nav-text">用来在构建镜像过程中设置环境变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#将宿主机目录下的文件拷贝进镜像且ADD命令会自动处理URL和解压tar压缩包"><span class="nav-number">1.0.7.</span> <span class="nav-text">将宿主机目录下的文件拷贝进镜像且ADD命令会自动处理URL和解压tar压缩包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类似ADD，拷贝文件和目录到镜像中"><span class="nav-number">1.0.8.</span> <span class="nav-text">类似ADD，拷贝文件和目录到镜像中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#将从构建上下文目录中-lt-源路径-gt-的文件-目录复制到新的一层的镜像内的-lt-目标路径-gt-位置"><span class="nav-number">1.0.9.</span> <span class="nav-text">将从构建上下文目录中&lt;源路径&gt;的文件/目录复制到新的一层的镜像内的&lt;目标路径&gt;位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#容器数据卷，用于保存和持久化工作"><span class="nav-number">1.0.10.</span> <span class="nav-text">容器数据卷，用于保存和持久化工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指定一个容器启动时要运行的命令"><span class="nav-number">1.0.11.</span> <span class="nav-text">指定一个容器启动时要运行的命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DockerFile中可以有多个CMD指令，但只有最后一个生效，CMD会被docker-run之后的参数替换"><span class="nav-number">1.0.12.</span> <span class="nav-text">DockerFile中可以有多个CMD指令，但只有最后一个生效，CMD会被docker run之后的参数替换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指定一个容器启动时要启动的命令"><span class="nav-number">1.0.13.</span> <span class="nav-text">指定一个容器启动时要启动的命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ENTERPOINT的目的和CMD一样，都是在指定容器启动程序及参数"><span class="nav-number">1.0.14.</span> <span class="nav-text">ENTERPOINT的目的和CMD一样，都是在指定容器启动程序及参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#当构建一个被继承的Dockerfile时运行命令，父镜像在被子继承后父镜像的onbuild被触发"><span class="nav-number">1.0.15.</span> <span class="nav-text">当构建一个被继承的Dockerfile时运行命令，父镜像在被子继承后父镜像的onbuild被触发</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#案例一："><span class="nav-number">2.</span> <span class="nav-text">案例一：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools"><span class="nav-number">2.0.1.</span> <span class="nav-text">centos镜像默认没有vim和net-tools工具，通过编写DockerFile创建容器使之安装vim和net-tools</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -631,6 +861,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
