@@ -291,6 +291,163 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/04/02/%E3%80%90%E9%80%92%E5%BD%92%E3%80%91%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Culaccino">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/yy.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Parallel line">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/04/02/%E3%80%90%E9%80%92%E5%BD%92%E3%80%91%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98/" itemprop="url">【递归】汉诺塔问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-02T13:12:45+08:00">
+                2020-04-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95/%E9%80%92%E5%BD%92/" itemprop="url" rel="index">
+                    <span itemprop="name">递归</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h2><h4 id="楚继光报怨道：“能量盘为什么要这样移动？真够麻烦的。”"><a href="#楚继光报怨道：“能量盘为什么要这样移动？真够麻烦的。”" class="headerlink" title="楚继光报怨道：“能量盘为什么要这样移动？真够麻烦的。”"></a>楚继光报怨道：“能量盘为什么要这样移动？真够麻烦的。”</h4><h4 id="“因为这样移动，暗含宇宙运行的奥义，它能够产生巨大的魔法力，将修罗王的魔法炮阵灭成渣。”墨老师一副高深莫测的神情。"><a href="#“因为这样移动，暗含宇宙运行的奥义，它能够产生巨大的魔法力，将修罗王的魔法炮阵灭成渣。”墨老师一副高深莫测的神情。" class="headerlink" title="“因为这样移动，暗含宇宙运行的奥义，它能够产生巨大的魔法力，将修罗王的魔法炮阵灭成渣。”墨老师一副高深莫测的神情。"></a>“因为这样移动，暗含宇宙运行的奥义，它能够产生巨大的魔法力，将修罗王的魔法炮阵灭成渣。”墨老师一副高深莫测的神情。</h4><h4 id="如图所示，已知魔法学院的防御系统的能量模块上有三根柱子a，b，c，能量盘为中间有孔的圆盘状，能量盘直径依次递减，初始时b柱、c柱为空，所有盘片套在a柱上，并且上面的盘片总是比下面的盘片小，现需将a柱上的能量盘通过b柱移到c柱上，规则是每次移动只能移动最上面的能量盘，而且保持任何柱子上的能量盘的排列均是上面的盘片比下面的盘片要小。试问需要移动多少次？"><a href="#如图所示，已知魔法学院的防御系统的能量模块上有三根柱子a，b，c，能量盘为中间有孔的圆盘状，能量盘直径依次递减，初始时b柱、c柱为空，所有盘片套在a柱上，并且上面的盘片总是比下面的盘片小，现需将a柱上的能量盘通过b柱移到c柱上，规则是每次移动只能移动最上面的能量盘，而且保持任何柱子上的能量盘的排列均是上面的盘片比下面的盘片要小。试问需要移动多少次？" class="headerlink" title="如图所示，已知魔法学院的防御系统的能量模块上有三根柱子a，b，c，能量盘为中间有孔的圆盘状，能量盘直径依次递减，初始时b柱、c柱为空，所有盘片套在a柱上，并且上面的盘片总是比下面的盘片小，现需将a柱上的能量盘通过b柱移到c柱上，规则是每次移动只能移动最上面的能量盘，而且保持任何柱子上的能量盘的排列均是上面的盘片比下面的盘片要小。试问需要移动多少次？"></a>如图所示，已知魔法学院的防御系统的能量模块上有三根柱子a，b，c，能量盘为中间有孔的圆盘状，能量盘直径依次递减，初始时b柱、c柱为空，所有盘片套在a柱上，并且上面的盘片总是比下面的盘片小，现需将a柱上的能量盘通过b柱移到c柱上，规则是每次移动只能移动最上面的能量盘，而且保持任何柱子上的能量盘的排列均是上面的盘片比下面的盘片要小。试问需要移动多少次？</h4>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/04/02/%E3%80%90%E9%80%92%E5%BD%92%E3%80%91%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/04/02/%E3%80%90%E9%80%92%E5%BD%92%E3%80%91N%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1076,163 +1233,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/03/30/%E3%80%90%E8%B4%AA%E5%BF%83%E3%80%91%E8%B4%B9%E7%94%A8%E6%9C%80%E5%B0%91/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Culaccino">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/yy.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Parallel line">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/30/%E3%80%90%E8%B4%AA%E5%BF%83%E3%80%91%E8%B4%B9%E7%94%A8%E6%9C%80%E5%B0%91/" itemprop="url">【贪心】费用最少</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-30T22:01:00+08:00">
-                2020-03-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
-                    <span itemprop="name">算法</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AE%97%E6%B3%95/%E8%B4%AA%E5%BF%83/" itemprop="url" rel="index">
-                    <span itemprop="name">贪心</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h2><h4 id="小墨老师总是不及时做作业，所以他总有很多的作业要做。每个老师都给了他一个完成作业的最后期限，如果他超过期限交作业，老师就会在他的期末评价中扣分。假设做每一门作业总是要一天。小墨老师希望你能够帮助他安排做作业的一个顺序，以便能够被扣掉的分数最少。"><a href="#小墨老师总是不及时做作业，所以他总有很多的作业要做。每个老师都给了他一个完成作业的最后期限，如果他超过期限交作业，老师就会在他的期末评价中扣分。假设做每一门作业总是要一天。小墨老师希望你能够帮助他安排做作业的一个顺序，以便能够被扣掉的分数最少。" class="headerlink" title="小墨老师总是不及时做作业，所以他总有很多的作业要做。每个老师都给了他一个完成作业的最后期限，如果他超过期限交作业，老师就会在他的期末评价中扣分。假设做每一门作业总是要一天。小墨老师希望你能够帮助他安排做作业的一个顺序，以便能够被扣掉的分数最少。"></a>小墨老师总是不及时做作业，所以他总有很多的作业要做。每个老师都给了他一个完成作业的最后期限，如果他超过期限交作业，老师就会在他的期末评价中扣分。假设做每一门作业总是要一天。小墨老师希望你能够帮助他安排做作业的一个顺序，以便能够被扣掉的分数最少。</h4>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/03/30/%E3%80%90%E8%B4%AA%E5%BF%83%E3%80%91%E8%B4%B9%E7%94%A8%E6%9C%80%E5%B0%91/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/03/30/%E3%80%90%E6%A8%A1%E6%8B%9F%E3%80%91%E8%AE%A1%E7%AE%97%E5%99%A8%E7%9A%84%E6%94%B9%E8%89%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1340,6 +1340,163 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2020/03/30/%E3%80%90%E6%A8%A1%E6%8B%9F%E3%80%91%E8%AE%A1%E7%AE%97%E5%99%A8%E7%9A%84%E6%94%B9%E8%89%AF/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/03/30/%E3%80%90%E8%B4%AA%E5%BF%83%E3%80%91%E8%B4%B9%E7%94%A8%E6%9C%80%E5%B0%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Culaccino">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/yy.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Parallel line">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/30/%E3%80%90%E8%B4%AA%E5%BF%83%E3%80%91%E8%B4%B9%E7%94%A8%E6%9C%80%E5%B0%91/" itemprop="url">【贪心】费用最少</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-30T22:01:00+08:00">
+                2020-03-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95/%E8%B4%AA%E5%BF%83/" itemprop="url" rel="index">
+                    <span itemprop="name">贪心</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h2><h4 id="小墨老师总是不及时做作业，所以他总有很多的作业要做。每个老师都给了他一个完成作业的最后期限，如果他超过期限交作业，老师就会在他的期末评价中扣分。假设做每一门作业总是要一天。小墨老师希望你能够帮助他安排做作业的一个顺序，以便能够被扣掉的分数最少。"><a href="#小墨老师总是不及时做作业，所以他总有很多的作业要做。每个老师都给了他一个完成作业的最后期限，如果他超过期限交作业，老师就会在他的期末评价中扣分。假设做每一门作业总是要一天。小墨老师希望你能够帮助他安排做作业的一个顺序，以便能够被扣掉的分数最少。" class="headerlink" title="小墨老师总是不及时做作业，所以他总有很多的作业要做。每个老师都给了他一个完成作业的最后期限，如果他超过期限交作业，老师就会在他的期末评价中扣分。假设做每一门作业总是要一天。小墨老师希望你能够帮助他安排做作业的一个顺序，以便能够被扣掉的分数最少。"></a>小墨老师总是不及时做作业，所以他总有很多的作业要做。每个老师都给了他一个完成作业的最后期限，如果他超过期限交作业，老师就会在他的期末评价中扣分。假设做每一门作业总是要一天。小墨老师希望你能够帮助他安排做作业的一个顺序，以便能够被扣掉的分数最少。</h4>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/03/30/%E3%80%90%E8%B4%AA%E5%BF%83%E3%80%91%E8%B4%B9%E7%94%A8%E6%9C%80%E5%B0%91/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1691,163 +1848,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2019/11/11/Git%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Culaccino">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/yy.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Parallel line">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/11/11/Git%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/" itemprop="url">Git相关命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-11T11:43:01+08:00">
-                2019-11-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%85%B6%E5%AE%83/" itemprop="url" rel="index">
-                    <span itemprop="name">其它</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%85%B6%E5%AE%83/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="所在环境："><a href="#所在环境：" class="headerlink" title="所在环境："></a>所在环境：</h2><h4 id="emsp-emsp-Windows-Git-bash"><a href="#emsp-emsp-Windows-Git-bash" class="headerlink" title="&emsp;&emsp;Windows Git bash"></a>&emsp;&emsp;Windows Git bash</h4><h2 id="基本命令："><a href="#基本命令：" class="headerlink" title="基本命令："></a>基本命令：</h2><h4 id="初始化一个git仓库"><a href="#初始化一个git仓库" class="headerlink" title="初始化一个git仓库"></a>初始化一个git仓库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/11/11/Git%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1902,7 +1902,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-count">30</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1913,7 +1913,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1924,7 +1924,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">33</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
