@@ -95,7 +95,7 @@
 <meta property="og:description" content="docker拉取镜像1docker pull docker.io&#x2F;sebp&#x2F;elk  docker 运行1docker run -dit --name myelk -p 5601:5601 -p 9200:9200 -p 5044:5044 -v &#x2F;opt&#x2F;elk-data:&#x2F;var&#x2F;lib&#x2F;elasticsearch -v &#x2F;etc&#x2F;localtime:&#x2F;etc&#x2F;localtime sebp&#x2F;e">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:&#x2F;&#x2F;gitee.com&#x2F;zy0912&#x2F;Picture-bed&#x2F;raw&#x2F;master&#x2F;img&#x2F;20200801203611.png">
-<meta property="og:updated_time" content="2020-08-01T13:02:57.140Z">
+<meta property="og:updated_time" content="2020-08-14T04:38:19.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;gitee.com&#x2F;zy0912&#x2F;Picture-bed&#x2F;raw&#x2F;master&#x2F;img&#x2F;20200801203611.png">
 
@@ -402,7 +402,7 @@
         <h2 id="docker拉取镜像"><a href="#docker拉取镜像" class="headerlink" title="docker拉取镜像"></a>docker拉取镜像</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull docker.io/sebp/elk</span><br></pre></td></tr></table></figure>
 
 <h2 id="docker-运行"><a href="#docker-运行" class="headerlink" title="docker 运行"></a>docker 运行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -dit --name myelk -p 5601:5601 -p 9200:9200 -p 5044:5044 -v /opt/elk-data:/var/lib/elasticsearch -v /etc/localtime:/etc/localtime sebp/elk</span><br></pre></td></tr></table></figure>
-
+<a id="more"></a>
 <h4 id="emsp-emsp-如果上一步启动未成功，查看docker日志出现以下错误"><a href="#emsp-emsp-如果上一步启动未成功，查看docker日志出现以下错误" class="headerlink" title="&emsp;&emsp;如果上一步启动未成功，查看docker日志出现以下错误"></a>&emsp;&emsp;如果上一步启动未成功，查看docker日志出现以下错误</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]</span><br></pre></td></tr></table></figure>
 <h4 id="emsp-emsp-调整服务器虚拟内存空间"><a href="#emsp-emsp-调整服务器虚拟内存空间" class="headerlink" title="&emsp;&emsp;调整服务器虚拟内存空间"></a>&emsp;&emsp;调整服务器虚拟内存空间</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -w vm.max_map_count=262144</span><br></pre></td></tr></table></figure>
 <h4 id="emsp-emsp-永久生效方法"><a href="#emsp-emsp-永久生效方法" class="headerlink" title="&emsp;&emsp;永久生效方法"></a>&emsp;&emsp;永久生效方法</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sysctl.conf</span><br><span class="line"></span><br><span class="line">vm.max_map_count=26144</span><br></pre></td></tr></table></figure>
