@@ -332,8 +332,8 @@
         <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Docker</tag>
+        <tag>Java</tag>
         <tag>SpringBoot</tag>
         <tag>Webmagic</tag>
         <tag>Redis</tag>
