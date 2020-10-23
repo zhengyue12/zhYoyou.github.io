@@ -86,15 +86,15 @@
 
 
 
-<meta name="description" content="实现背景起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。  参考博客利用开源图片服务器 zimg搭建属于自己的服务器 sb实现接口上传图片到图片服务器  环境Tip: 如果没有事先搭建Zimg，可以见图片服务器搭建初体验 JDK 1.8SpringBoot 2.2.1DockerZimg">
+<meta name="description" content="实现背景起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。  参考博客利用开源图片服务器 zimg搭建属于自己的服务器 sb实现接口上传图片到图片服务器">
 <meta name="keywords" content="Java,SpringBoot,Zimg">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringBoot整合Zimg实现图片管理">
 <meta property="og:url" content="https:&#x2F;&#x2F;zhengyue12.github.io&#x2F;2020&#x2F;10&#x2F;23&#x2F;SpringBoot%E6%95%B4%E5%90%88Zimg%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E7%AE%A1%E7%90%86&#x2F;index.html">
 <meta property="og:site_name" content="Parallel line">
-<meta property="og:description" content="实现背景起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。  参考博客利用开源图片服务器 zimg搭建属于自己的服务器 sb实现接口上传图片到图片服务器  环境Tip: 如果没有事先搭建Zimg，可以见图片服务器搭建初体验 JDK 1.8SpringBoot 2.2.1DockerZimg">
+<meta property="og:description" content="实现背景起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。  参考博客利用开源图片服务器 zimg搭建属于自己的服务器 sb实现接口上传图片到图片服务器">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-10-23T00:38:43.006Z">
+<meta property="og:updated_time" content="2020-10-23T00:41:53.138Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -399,12 +399,12 @@
       
         <h2 id="实现背景"><a href="#实现背景" class="headerlink" title="实现背景"></a>实现背景</h2><h4 id="起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。"><a href="#起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。" class="headerlink" title="起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。"></a>起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。</h4><br/>
 
-<h2 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h2><h4 id="利用开源图片服务器-zimg搭建属于自己的服务器-sb实现接口上传图片到图片服务器"><a href="#利用开源图片服务器-zimg搭建属于自己的服务器-sb实现接口上传图片到图片服务器" class="headerlink" title="利用开源图片服务器 zimg搭建属于自己的服务器 sb实现接口上传图片到图片服务器"></a><a href="https://blog.csdn.net/qq_30519365/article/details/96498131/" target="_blank" rel="noopener">利用开源图片服务器 zimg搭建属于自己的服务器 sb实现接口上传图片到图片服务器</a></h4><br/>
+<h2 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h2><h4 id="利用开源图片服务器-zimg搭建属于自己的服务器-sb实现接口上传图片到图片服务器"><a href="#利用开源图片服务器-zimg搭建属于自己的服务器-sb实现接口上传图片到图片服务器" class="headerlink" title="利用开源图片服务器 zimg搭建属于自己的服务器 sb实现接口上传图片到图片服务器"></a><a href="https://blog.csdn.net/qq_30519365/article/details/96498131/" target="_blank" rel="noopener">利用开源图片服务器 zimg搭建属于自己的服务器 sb实现接口上传图片到图片服务器</a></h4><a id="more"></a>
+<br/>
 
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><h5 id="Tip-如果没有事先搭建Zimg，可以见图片服务器搭建初体验"><a href="#Tip-如果没有事先搭建Zimg，可以见图片服务器搭建初体验" class="headerlink" title="Tip: 如果没有事先搭建Zimg，可以见图片服务器搭建初体验"></a>Tip: 如果没有事先搭建Zimg，可以见<a href="https://zhengyue12.github.io/2020/06/10/%E5%9B%BE%E7%89%87%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%88%9D%E4%BD%93%E9%AA%8C/">图片服务器搭建初体验</a></h5><blockquote>
 <p>JDK 1.8<br>SpringBoot 2.2.1<br>Docker<br>Zimg </p>
 </blockquote>
-<a id="more"></a>
 <br/>
 
 <h2 id="图片上传"><a href="#图片上传" class="headerlink" title="图片上传"></a>图片上传</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> CommonResult <span class="title">uploadImgsToZimg</span><span class="params">(MultipartFile file)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(file.isEmpty()) &#123;</span><br><span class="line">            <span class="keyword">return</span> CommonResult.failed(<span class="string">"文件不为空"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        String filename=file.getOriginalFilename();</span><br><span class="line">        <span class="comment">// 文件类型</span></span><br><span class="line">        String prefix=filename.substring(filename.lastIndexOf(<span class="string">"."</span>)+<span class="number">1</span>);</span><br><span class="line">        OutputStream outStream = <span class="keyword">null</span>;</span><br><span class="line">        BufferedReader in = <span class="keyword">null</span>;</span><br><span class="line">        String result = <span class="string">""</span>;</span><br><span class="line">        JSONObject jsonResult = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            URL realUrl = <span class="keyword">new</span> URL(ZIMG_URL + <span class="string">"upload"</span>);</span><br><span class="line">            <span class="comment">// 打开和URL之间的连接</span></span><br><span class="line">            URLConnection conn = realUrl.openConnection();</span><br><span class="line">            <span class="comment">// 设置通用的请求属性</span></span><br><span class="line">            conn.setRequestProperty(<span class="string">"accept"</span>, <span class="string">"*/*"</span>);</span><br><span class="line">            conn.setRequestProperty(<span class="string">"connection"</span>, <span class="string">"Keep-Alive"</span>);</span><br><span class="line">            conn.setRequestProperty(<span class="string">"Content-Type"</span>, prefix);</span><br><span class="line">            <span class="comment">// 发送POST请求必须设置如下两行</span></span><br><span class="line">            conn.setDoOutput(<span class="keyword">true</span>);</span><br><span class="line">            conn.setDoInput(<span class="keyword">true</span>);</span><br><span class="line">            <span class="comment">//二进制</span></span><br><span class="line">            outStream = conn.getOutputStream();</span><br><span class="line">            outStream.write(file.getBytes());</span><br><span class="line">            outStream.flush();</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 定义BufferedReader输入流来读取URL的响应</span></span><br><span class="line">            in = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(conn.getInputStream()));</span><br><span class="line">            String line;</span><br><span class="line">            <span class="keyword">while</span> ((line = in.readLine()) != <span class="keyword">null</span>) &#123;</span><br><span class="line">                result += line;</span><br><span class="line">            &#125;</span><br><span class="line">            jsonResult = JSONObject.parseObject(result);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            CommonResult.failed(<span class="string">"发送 POST 请求出现异常！"</span> + e);</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123; <span class="comment">//使用finally块来关闭输出流、输入流</span></span><br><span class="line">            <span class="keyword">try</span>&#123;</span><br><span class="line">                <span class="keyword">if</span> (outStream != <span class="keyword">null</span>) &#123;</span><br><span class="line">                    outStream.close();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (in != <span class="keyword">null</span>) &#123;</span><br><span class="line">                    in.close();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> CommonResult.success(jsonResult);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
@@ -487,6 +487,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2020/10/23/Sharding-JDBC-%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB/" rel="prev" title="Sharding JDBC 读写分离">
+                Sharding JDBC 读写分离 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -566,7 +570,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -577,7 +581,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -588,7 +592,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-count">35</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
