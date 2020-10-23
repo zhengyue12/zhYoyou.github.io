@@ -291,6 +291,169 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/10/23/SpringBoot%E6%95%B4%E5%90%88Zimg%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E7%AE%A1%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Culaccino">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/yy.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Parallel line">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/10/23/SpringBoot%E6%95%B4%E5%90%88Zimg%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E7%AE%A1%E7%90%86/" itemprop="url">SpringBoot整合Zimg实现图片管理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-23T07:58:33+08:00">
+                2020-10-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/SpringBoot/" itemprop="url" rel="index">
+                    <span itemprop="name">SpringBoot</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="实现背景"><a href="#实现背景" class="headerlink" title="实现背景"></a>实现背景</h2><h4 id="起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。"><a href="#起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。" class="headerlink" title="起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。"></a>起初时常挂在嘴边要实现一下springboot和Zimg的整合，时隔半个学期才突然想起来还有这回事。趁着最近比较闲，翻了几篇博客，想着一定要实现一下。</h4><br/>
+
+<h2 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h2><h4 id="利用开源图片服务器-zimg搭建属于自己的服务器-sb实现接口上传图片到图片服务器"><a href="#利用开源图片服务器-zimg搭建属于自己的服务器-sb实现接口上传图片到图片服务器" class="headerlink" title="利用开源图片服务器 zimg搭建属于自己的服务器 sb实现接口上传图片到图片服务器"></a><a href="https://blog.csdn.net/qq_30519365/article/details/96498131/" target="_blank" rel="noopener">利用开源图片服务器 zimg搭建属于自己的服务器 sb实现接口上传图片到图片服务器</a></h4><br/>
+
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><h5 id="Tip-如果没有事先搭建Zimg，可以见图片服务器搭建初体验"><a href="#Tip-如果没有事先搭建Zimg，可以见图片服务器搭建初体验" class="headerlink" title="Tip: 如果没有事先搭建Zimg，可以见图片服务器搭建初体验"></a>Tip: 如果没有事先搭建Zimg，可以见<a href="https://zhengyue12.github.io/2020/06/10/%E5%9B%BE%E7%89%87%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%88%9D%E4%BD%93%E9%AA%8C/">图片服务器搭建初体验</a></h5><blockquote>
+<p>JDK 1.8<br>SpringBoot 2.2.1<br>Docker<br>Zimg </p>
+</blockquote>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/10/23/SpringBoot%E6%95%B4%E5%90%88Zimg%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E7%AE%A1%E7%90%86/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/10/21/Kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1740,163 +1903,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhengyue12.github.io/2020/05/17/MP%E5%A4%9A%E6%A8%A1%E5%9D%97%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E6%9D%BF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Culaccino">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/yy.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Parallel line">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/05/17/MP%E5%A4%9A%E6%A8%A1%E5%9D%97%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E6%9D%BF/" itemprop="url">MP多模块代码生成器模板</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-17T10:34:20+08:00">
-                2020-05-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/MybatisPlus/" itemprop="url" rel="index">
-                    <span itemprop="name">MybatisPlus</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h4 id="从正式进入项目组到接手练习做项目，一直想写一个多模块的代码生成器，方便组内其他成员去自动生成三层架构和实体类等代码，避免重复繁琐的操作。又因为这几天改Bug改到自闭，一直没有时间将其实践起来。因为今天是周末所以早早就起来，结合官网的单模块代码生成器，以及一上午仅仅找到一篇类似的博客进行改写，完成了多模块代码生成的模板。以下直接放代码，记录一下，方便以后工作直接套用。"><a href="#从正式进入项目组到接手练习做项目，一直想写一个多模块的代码生成器，方便组内其他成员去自动生成三层架构和实体类等代码，避免重复繁琐的操作。又因为这几天改Bug改到自闭，一直没有时间将其实践起来。因为今天是周末所以早早就起来，结合官网的单模块代码生成器，以及一上午仅仅找到一篇类似的博客进行改写，完成了多模块代码生成的模板。以下直接放代码，记录一下，方便以后工作直接套用。" class="headerlink" title="从正式进入项目组到接手练习做项目，一直想写一个多模块的代码生成器，方便组内其他成员去自动生成三层架构和实体类等代码，避免重复繁琐的操作。又因为这几天改Bug改到自闭，一直没有时间将其实践起来。因为今天是周末所以早早就起来，结合官网的单模块代码生成器，以及一上午仅仅找到一篇类似的博客进行改写，完成了多模块代码生成的模板。以下直接放代码，记录一下，方便以后工作直接套用。"></a>从正式进入项目组到接手练习做项目，一直想写一个多模块的代码生成器，方便组内其他成员去自动生成三层架构和实体类等代码，避免重复繁琐的操作。又因为这几天改Bug改到自闭，一直没有时间将其实践起来。因为今天是周末所以早早就起来，结合官网的单模块代码生成器，以及一上午仅仅找到一篇类似的博客进行改写，完成了多模块代码生成的模板。以下直接放代码，记录一下，方便以后工作直接套用。</h4>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/05/17/MP%E5%A4%9A%E6%A8%A1%E5%9D%97%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E6%9D%BF/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1951,7 +1957,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">33</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
